@@ -23,47 +23,44 @@ export function CalendarDateRangePicker({
   }
 
   return (
-    <div className={cn("grid gap-2", className)}>
-      <Popover>
-        <PopoverTrigger asChild>
-          <Button
-            id="date"
-            variant={"outline"}
-            className={cn(
-              "w-[260px] justify-start text-left font-normal border-[#7B7B7B]",
-              !date && "text-muted-foreground"
-            )}
-          >
-            <CalendarIcon className="mr-2 h-4 w-4" />
-            {date?.from ? (
-              date.to ? (
-                <>
-                  {format(date.from, "LLL dd")} - {format(date.to, "LLL dd")}
-                </>
-              ) : (
-                format(date.from, "LLL dd")
-              )
+    // <div className={cn("grid gap-2", className)}>
+    <Popover>
+      <PopoverTrigger asChild>
+        <Button
+          id="date"
+          variant={"outline"}
+          className={cn(
+            "flex-1 justify-start text-left font-normal border-[#7B7B7B]",
+            !date && "text-muted-foreground"
+          )}
+        >
+          <CalendarIcon className="mr-2 h-4 w-4" />
+          {date?.from ? (
+            date.to ? (
+              <>
+                {format(date.from, "LLL dd")} - {format(date.to, "LLL dd")}
+              </>
             ) : (
-              <span>Pick a date</span>
-            )}
-          </Button>
-        </PopoverTrigger>
-        <PopoverContent className="w-auto p-0" align="end">
-          <Calendar
-            initialFocus
-            mode="range"
-            defaultMonth={date?.from}
-            selected={date}
-            onSelect={setDate}
-            numberOfMonths={2}
-            fromMonth={new Date()}
-            disabled={(date) => isPastDate(date)}
-            modifiersStyles={{
-              today: { backgroundColor: " #70B8FF" },
-            }}
-          />
-        </PopoverContent>
-      </Popover>
-    </div>
+              format(date.from, "LLL dd")
+            )
+          ) : (
+            <span>Pick a date</span>
+          )}
+        </Button>
+      </PopoverTrigger>
+      <PopoverContent className="w-auto p-0" align="end">
+        <Calendar
+          initialFocus
+          mode="range"
+          defaultMonth={date?.from}
+          selected={date}
+          onSelect={setDate}
+          numberOfMonths={2}
+          fromMonth={new Date()}
+          disabled={(date) => isPastDate(date)}
+        />
+      </PopoverContent>
+    </Popover>
+    // </div>
   );
 }
