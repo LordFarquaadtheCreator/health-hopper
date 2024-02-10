@@ -53,53 +53,64 @@ export default function MusicPage() {
         <Header />
         {/* make this a layout */}
         {/* <div className="border-t"> */}
-        <Flex className="bg-background mt-10 px-40">
+        <Flex className="bg-background mt-14 px-40">
           <Flex>
             <Flex className="p-4 border-[1px] border-gray-300 rounded-b-none border-b-0 rounded-lg flex justify-center">
-              <Tabs defaultValue="Dental">
-                <TabsList className="bg-transparent">
-                  <TabsTrigger value="Dental">Dental</TabsTrigger>
-                  <TabsTrigger value="Surgery">Surgery</TabsTrigger>
-                  <TabsTrigger value="Cancer">Cancer</TabsTrigger>
-                  <TabsTrigger value="Orthopedics">Orthopedics</TabsTrigger>
-                  <TabsTrigger value="Transplant">Transplant</TabsTrigger>
+              <Tabs className="bg-none" defaultValue="Dental">
+                <TabsList className="shrink-0 bg-transparent">
+                  <TabsTrigger
+                    className="data-[state=active]:text-black rounded-none   data-[state=active]:focus:relative data-[state=active]:shadow-[0_0_0_0px] data-[state=active]:border-b border-black  outline-none cursor-pointer"
+                    value="Dental"
+                  >
+                    Dental
+                  </TabsTrigger>
+                  <TabsTrigger
+                    className="data-[state=active]:text-black rounded-none   data-[state=active]:focus:relative data-[state=active]:shadow-[0_0_0_0px] data-[state=active]:border-b border-black  outline-none cursor-pointer"
+                    value="Surgery"
+                  >
+                    Surgery
+                  </TabsTrigger>
+                  <TabsTrigger
+                    className="data-[state=active]:text-black rounded-none   data-[state=active]:focus:relative data-[state=active]:shadow-[0_0_0_0px] data-[state=active]:border-b border-black  outline-none cursor-pointer"
+                    value="Cancer"
+                  >
+                    Cancer
+                  </TabsTrigger>
+                  <TabsTrigger
+                    className="data-[state=active]:text-black rounded-none   data-[state=active]:focus:relative data-[state=active]:shadow-[0_0_0_0px] data-[state=active]:border-b border-black  outline-none cursor-pointer"
+                    value="Orthopedics"
+                  >
+                    Orthopedics
+                  </TabsTrigger>
+                  <TabsTrigger
+                    className="data-[state=active]:text-black rounded-none   data-[state=active]:focus:relative data-[state=active]:shadow-[0_0_0_0px] data-[state=active]:border-b border-black  outline-none cursor-pointer"
+                    value="Transplant"
+                  >
+                    Transplant
+                  </TabsTrigger>
                 </TabsList>
               </Tabs>
             </Flex>
-            <Flex className="flex flex-row p-6 gap-4 border-gray-300 rounded-t-none border-[1px] rounded-lg ">
+            <Flex className="flex flex-row pb-10 p-6 gap-4 border-gray-300 rounded-t-none border-[1px] rounded-lg ">
               <ComboboxDemo />
               <CalendarDateRangePicker />
               <PopoverDemo />
+              <Button className="flex items-center gap-2">Search</Button>
             </Flex>
           </Flex>
           {/* <div className="grid lg:grid-cols-5"> */}
           {/* <Sidebar playlists={playlists} className="hidden lg:block" /> */}
-          {/* <div className="col-span-3 lg:col-span-4 ">
+          <div className="col-span-3 lg:col-span-4 ">
             <div className="h-full py-6 ">
               <Tabs defaultValue="music" className="h-full space-y-6">
-                <div className="space-between flex items-center">
-                  <TabsList >
-                    <TabsTrigger value="music" className="relative">
-                      Music
-                    </TabsTrigger>
-                    <TabsTrigger value="podcasts">Podcasts</TabsTrigger>
-                    <TabsTrigger value="live" disabled>
-                      Live
-                    </TabsTrigger>
-                  </TabsList>
-                  
-                  <div className="ml-auto mr-4">
-                    <Link href="/auth/signup">Signup</Link>
-                  </div>
-                </div>
                 <TabsContent
                   value="music"
                   className="border-none p-0 outline-none"
                 >
-                  <div className="flex items-center justify-between">
+                  <div className="flex mt-10 items-center justify-between">
                     <div className="space-y-1">
                       <h2 className="text-2xl font-semibold tracking-tight">
-                        Listen Now
+                        Travel Now
                       </h2>
                       <p className="text-sm text-muted-foreground">
                         Top picks for you. Updated daily.
@@ -170,7 +181,7 @@ export default function MusicPage() {
                 </TabsContent>
               </Tabs>
             </div>
-          </div> */}
+          </div>
           {/* </div> */}
         </Flex>
       </div>
