@@ -59,31 +59,31 @@ export default function MusicPage() {
               <Tabs className="bg-none" defaultValue="Dental">
                 <TabsList className="shrink-0 bg-transparent">
                   <TabsTrigger
-                    className="data-[state=active]:text-black rounded-none   data-[state=active]:focus:relative data-[state=active]:shadow-[0_0_0_0px] data-[state=active]:border-b border-black  outline-none cursor-pointer"
+                    className="data-[state=active]:text-black data-[state=active]:dark:text-white rounded-none   data-[state=active]:focus:relative data-[state=active]:shadow-[0_0_0_0px] data-[state=active]:border-b border-black dark:border-white  outline-none cursor-pointer"
                     value="Dental"
                   >
                     Dental
                   </TabsTrigger>
                   <TabsTrigger
-                    className="data-[state=active]:text-black rounded-none   data-[state=active]:focus:relative data-[state=active]:shadow-[0_0_0_0px] data-[state=active]:border-b border-black  outline-none cursor-pointer"
+                    className="data-[state=active]:text-black data-[state=active]:dark:text-white rounded-none   data-[state=active]:focus:relative data-[state=active]:shadow-[0_0_0_0px] data-[state=active]:border-b border-black dark:border-white  outline-none cursor-pointer"
                     value="Surgery"
                   >
                     Surgery
                   </TabsTrigger>
                   <TabsTrigger
-                    className="data-[state=active]:text-black rounded-none   data-[state=active]:focus:relative data-[state=active]:shadow-[0_0_0_0px] data-[state=active]:border-b border-black  outline-none cursor-pointer"
+                    className="data-[state=active]:text-black data-[state=active]:dark:text-white rounded-none   data-[state=active]:focus:relative data-[state=active]:shadow-[0_0_0_0px] data-[state=active]:border-b border-black dark:border-white  outline-none cursor-pointer"
                     value="Cancer"
                   >
                     Cancer
                   </TabsTrigger>
                   <TabsTrigger
-                    className="data-[state=active]:text-black rounded-none   data-[state=active]:focus:relative data-[state=active]:shadow-[0_0_0_0px] data-[state=active]:border-b border-black  outline-none cursor-pointer"
+                    className="data-[state=active]:text-black data-[state=active]:dark:text-white rounded-none   data-[state=active]:focus:relative data-[state=active]:shadow-[0_0_0_0px] data-[state=active]:border-b border-black dark:border-white  outline-none cursor-pointer"
                     value="Orthopedics"
                   >
                     Orthopedics
                   </TabsTrigger>
                   <TabsTrigger
-                    className="data-[state=active]:text-black rounded-none   data-[state=active]:focus:relative data-[state=active]:shadow-[0_0_0_0px] data-[state=active]:border-b border-black  outline-none cursor-pointer"
+                    className="data-[state=active]:text-black data-[state=active]:dark:text-white rounded-none   data-[state=active]:focus:relative data-[state=active]:shadow-[0_0_0_0px] data-[state=active]:border-b border-black dark:border-white  outline-none cursor-pointer"
                     value="Transplant"
                   >
                     Transplant
@@ -121,14 +121,14 @@ export default function MusicPage() {
                   <div className="relative">
                     <ScrollArea type="scroll">
                       <div className="flex space-x-4 pb-4 no-scrollbar">
-                        {listenNowAlbums.map((album) => (
+                        {listenNowAlbums.map((album: any) => (
                           <AlbumArtwork
                             key={album.name}
                             album={album}
                             className="w-[250px]"
                             aspectRatio="portrait"
                             width={250}
-                            height={330}
+                            height={200}
                           />
                         ))}
                       </div>
@@ -147,7 +147,7 @@ export default function MusicPage() {
                   <div className="relative">
                     <ScrollArea type="scroll">
                       <div className="flex space-x-4 pb-4">
-                        {madeForYouAlbums.map((album) => (
+                        {madeForYouAlbums.map((album: any) => (
                           <AlbumArtwork
                             key={album.name}
                             album={album}
