@@ -53,7 +53,7 @@ export default function MusicPage() {
         <Header />
         {/* make this a layout */}
         {/* <div className="border-t"> */}
-        <Flex className="bg-background mt-14 px-40">
+        <Flex className="bg-background mt-14 px-20">
           <Flex>
             <Flex className="p-4 border-[1px] border-gray-300 rounded-b-none border-b-0 rounded-lg flex justify-center">
               <Tabs className="bg-none" defaultValue="Dental">
@@ -107,7 +107,7 @@ export default function MusicPage() {
                   value="music"
                   className="border-none p-0 outline-none"
                 >
-                  <div className="flex mt-10 items-center justify-between">
+                  <div className="flex mt-10 items-center justify-between ">
                     <div className="space-y-1">
                       <h2 className="text-2xl font-semibold tracking-tight">
                         Travel Now
@@ -119,8 +119,8 @@ export default function MusicPage() {
                   </div>
                   <Separator className="my-4" />
                   <div className="relative">
-                    <ScrollArea>
-                      <div className="flex space-x-4 pb-4">
+                    <ScrollArea type="scroll">
+                      <div className="flex space-x-4 pb-4 no-scrollbar">
                         {listenNowAlbums.map((album) => (
                           <AlbumArtwork
                             key={album.name}
@@ -137,15 +137,15 @@ export default function MusicPage() {
                   </div>
                   <div className="mt-6 space-y-1">
                     <h2 className="text-2xl font-semibold tracking-tight">
-                      Made for You
+                      Just for You
                     </h2>
                     <p className="text-sm text-muted-foreground">
-                      Your personal playlists. Updated daily.
+                      Medical options that can fit your needs.
                     </p>
                   </div>
                   <Separator className="my-4" />
                   <div className="relative">
-                    <ScrollArea>
+                    <ScrollArea type="scroll">
                       <div className="flex space-x-4 pb-4">
                         {madeForYouAlbums.map((album) => (
                           <AlbumArtwork
@@ -158,7 +158,7 @@ export default function MusicPage() {
                           />
                         ))}
                       </div>
-                      <ScrollBar orientation="horizontal" />
+                      <ScrollBar typeof="scroll" orientation="horizontal" />
                     </ScrollArea>
                   </div>
                 </TabsContent>
