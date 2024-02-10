@@ -128,11 +128,11 @@ def analyze_all_companies_sentiments(json_data, sentiment_pipeline, limit=50):  
             company_sentiments.append((company_name, dominant_sentiment, sentiment_counts))
         else:
             company_sentiments.append((company_name, "No Reviews"))
-    return company_sentiments
+    return company_sentiments, dominant_sentiment
 
 
 # Call the function to analyze all companies' sentiments
-all_companies_sentiments = analyze_all_companies_sentiments(json_data, sentiment_pipeline, 50)
+all_companies_sentiments, dominant_sentiment = analyze_all_companies_sentiments(json_data, sentiment_pipeline, 50)
 
 # Print the sentiments for each company (for testing, this prints detailed sentiment counts)
 for company_name, dominant_sentiment, sentiment_counts in all_companies_sentiments:

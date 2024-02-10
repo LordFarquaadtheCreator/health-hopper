@@ -1,47 +1,31 @@
 # this file will be used to extract the keywords that was used to cateogirze the sentiment analysis model, this will utilize a seperate machine learning model of it's own
+# this file will be used to extract the keywords that was used to categorize the sentiment analysis model
+from sentiment_analysis import all_companies_sentiments, review_snippets_2d
+import os
 
-# the following is the skeletal structure of the keyword extraction
-import spacy
+# Function to write the review snippets to a text file
+def save_review_snippets(review_snippets, filename):
+    with open(filename, "w", encoding='utf-8') as file:
+        for company_reviews in review_snippets:
+            for review in company_reviews:
+                file.write(review + "\n")
+            file.write("\n-----\n\n")
 
-# import the JSON data, same as how the data was imported in sentiment_analysis.py
-# Load JSON data from file
-with open('C:\\Users\\dasa7\\OneDrive\\Desktop\\VS_Android_Projects\\health-hopper\\data-scraping\\data-with-reviews.json', 'r', encoding='utf-8') as f:
-    json_data = json.load(f)
-    
-# Initialize a list to hold lists of review snippets for each company
-review_snippets_2d = []
+# Function to write the all_companies_sentiments to a text file
+def save_company_sentiments(company_sentiments, filename):
+    with open(filename, "w", encoding='utf-8') as file:
+        for company_name, dominant_sentiment, sentiment_counts in company_sentiments:
+            file.write(f"Company: {company_name}\nDominant Sentiment: {dominant_sentiment}\nSentiment Counts: {sentiment_counts}\n\n-----\n\n")
 
-# Extract review snippets and store them in the 2D list
-for company in json_data:
-    # Initialize a list to hold review snippets for the current company
-    company_reviews = []
-    
-    # Check if the 'reviews' key exists and iterate over reviews if it does
-    if 'reviews' in company:
-        for review in company['reviews']:
-            try:
-                # Attempt to safely extract the snippet
-                snippet = review.get('snippet')
-                if snippet:  # Check if snippet is not None
-                    company_reviews.append(snippet)
-            except AttributeError:
-                # Handle the case where review is not a dictionary as expected
-                # For example, you can print a warning or pass
-                print("Skipping a review that is not in the expected format.")
-            
-    # Append the company's reviews to the 2D list, only if there are reviews
-    if company_reviews:
-        review_snippets_2d.append(company_reviews)
+# Ensure the directory exists
+output_dir = "Text_Files"
+os.makedirs(output_dir, exist_ok=True)
 
-# Print to see if it works as intended
-print(review_snippets_2d)
+# Save the review snippets
+review_snippets_filename = os.path.join(output_dir, "review_snippets.txt")
+save_review_snippets(review_snippets_2d, review_snippets_filename)
 
-nlp = spacy.load("en_core_web_sm")  # load the text extraction model
+# Save the company sentiments
+company_sentiments_filename = os.path.join(output_dir, "company_sentiments.txt")
+save_company_sentiments(all_companies_sentiments, company_sentiments_filename)
 
-def extract_keywords(text):
-    '''
-        Extracts keywords for a given text using spaCy
-    '''
-    doc = nlp(text)  # feed the text paramter as input to the nlp model
-    keywords = [token.text for token in doc if token.is_stop != True and token.is_punct != True]
-    return keywords
