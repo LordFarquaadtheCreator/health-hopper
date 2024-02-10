@@ -1,5 +1,5 @@
 "use client";
-import { listenNowAlbums, madeForYouAlbums } from "@/data/albums";
+import { listenNowAlbums } from "@/data/albums";
 import { ScrollArea } from "@radix-ui/react-scroll-area";
 import { Separator } from "@radix-ui/react-separator";
 import { AlbumArtwork } from "./album-artwork";
@@ -12,8 +12,9 @@ export function DentalTab() {
 
   useEffect(() => {
     // Simulate a fetch call
-    setTimeout(() => setLoading(false), 500); // Remove this line when implementing actual data fetching
+    setTimeout(() => setLoading(false), 1000); // Remove this line when implementing actual data fetching
     // Fetch your data here and set loading to false when done
+    // fetch different images when loadign
   }, []);
 
   return (
@@ -39,18 +40,17 @@ export function DentalTab() {
                       className="w-[225px] min-w-[225px] h-[225px] min-h-[225px]"
                     />
                   ))
-              : listenNowAlbums
-                  .slice(21, 31)
-                  .map((album: any) => (
-                    <AlbumArtwork
-                      key={album.name}
-                      album={album}
-                      className="w-[225px] min-w-[225px]"
-                      aspectRatio="portrait"
-                      width={225}
-                      height={200}
-                    />
-                  ))}
+              : listenNowAlbums.slice(0, 11).map((album: any) => (
+                  <AlbumArtwork
+                    key={album.name}
+                    album={album}
+                    className="w-[225px] min-w-[225px]"
+                    aspectRatio="portrait"
+                    //   setLoading={setLoading}
+                    width={225}
+                    height={200}
+                  />
+                ))}
           </div>
           <ScrollBar orientation="horizontal" />
         </ScrollArea>
@@ -65,16 +65,28 @@ export function DentalTab() {
       <div className="relative">
         <ScrollArea type="scroll">
           <div className="flex space-x-4 pb-4">
-            {madeForYouAlbums.map((album: any) => (
-              <AlbumArtwork
-                key={album.name}
-                album={album}
-                className="w-[150px]"
-                aspectRatio="square"
-                width={150}
-                height={150}
-              />
-            ))}
+            {isLoading
+              ? Array(10)
+                  .fill(0)
+                  .map((_, index) => (
+                    <Skeleton
+                      key={index}
+                      className="w-[225px] min-w-[225px] h-[225px] min-h-[225px]"
+                    />
+                  ))
+              : listenNowAlbums
+                  .slice(15, 24)
+                  .map((album: any) => (
+                    <AlbumArtwork
+                      key={album.name}
+                      album={album}
+                      className="w-[150px]"
+                      aspectRatio="square"
+                      width={150}
+                      small={true}
+                      height={150}
+                    />
+                  ))}
           </div>
           <ScrollBar typeof="scroll" orientation="horizontal" />
         </ScrollArea>
