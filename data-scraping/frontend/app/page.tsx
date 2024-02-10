@@ -24,6 +24,8 @@ import Header from "@/components/header";
 import { Flex } from "@radix-ui/themes";
 import { ComboboxDemo } from "@/components/comboBox";
 import { PopoverDemo } from "@/components/travellers";
+import { MiddleTabs } from "@/components/middleTabs";
+import { DentalTab } from "@/components/dentalTab";
 
 export const metadata: Metadata = {
   title: "Music App",
@@ -53,44 +55,9 @@ export default function MusicPage() {
         <Header />
         {/* make this a layout */}
         {/* <div className="border-t"> */}
-        <Flex className="bg-background mt-14 px-40">
+        <Flex className="bg-background mt-14 px-20">
           <Flex>
-            <Flex className="p-4 border-[1px] border-gray-300 rounded-b-none border-b-0 rounded-lg flex justify-center">
-              <Tabs className="bg-none" defaultValue="Dental">
-                <TabsList className="shrink-0 bg-transparent">
-                  <TabsTrigger
-                    className="data-[state=active]:text-black rounded-none   data-[state=active]:focus:relative data-[state=active]:shadow-[0_0_0_0px] data-[state=active]:border-b border-black  outline-none cursor-pointer"
-                    value="Dental"
-                  >
-                    Dental
-                  </TabsTrigger>
-                  <TabsTrigger
-                    className="data-[state=active]:text-black rounded-none   data-[state=active]:focus:relative data-[state=active]:shadow-[0_0_0_0px] data-[state=active]:border-b border-black  outline-none cursor-pointer"
-                    value="Surgery"
-                  >
-                    Surgery
-                  </TabsTrigger>
-                  <TabsTrigger
-                    className="data-[state=active]:text-black rounded-none   data-[state=active]:focus:relative data-[state=active]:shadow-[0_0_0_0px] data-[state=active]:border-b border-black  outline-none cursor-pointer"
-                    value="Cancer"
-                  >
-                    Cancer
-                  </TabsTrigger>
-                  <TabsTrigger
-                    className="data-[state=active]:text-black rounded-none   data-[state=active]:focus:relative data-[state=active]:shadow-[0_0_0_0px] data-[state=active]:border-b border-black  outline-none cursor-pointer"
-                    value="Orthopedics"
-                  >
-                    Orthopedics
-                  </TabsTrigger>
-                  <TabsTrigger
-                    className="data-[state=active]:text-black rounded-none   data-[state=active]:focus:relative data-[state=active]:shadow-[0_0_0_0px] data-[state=active]:border-b border-black  outline-none cursor-pointer"
-                    value="Transplant"
-                  >
-                    Transplant
-                  </TabsTrigger>
-                </TabsList>
-              </Tabs>
-            </Flex>
+            <MiddleTabs />
             <Flex className="flex flex-row pb-10 p-6 gap-4 border-gray-300 rounded-t-none border-[1px] rounded-lg ">
               <ComboboxDemo />
               <CalendarDateRangePicker />
@@ -107,60 +74,7 @@ export default function MusicPage() {
                   value="music"
                   className="border-none p-0 outline-none"
                 >
-                  <div className="flex mt-10 items-center justify-between">
-                    <div className="space-y-1">
-                      <h2 className="text-2xl font-semibold tracking-tight">
-                        Travel Now
-                      </h2>
-                      <p className="text-sm text-muted-foreground">
-                        Top picks for you. Updated daily.
-                      </p>
-                    </div>
-                  </div>
-                  <Separator className="my-4" />
-                  <div className="relative">
-                    <ScrollArea>
-                      <div className="flex space-x-4 pb-4">
-                        {listenNowAlbums.map((album) => (
-                          <AlbumArtwork
-                            key={album.name}
-                            album={album}
-                            className="w-[250px]"
-                            aspectRatio="portrait"
-                            width={250}
-                            height={330}
-                          />
-                        ))}
-                      </div>
-                      <ScrollBar orientation="horizontal" />
-                    </ScrollArea>
-                  </div>
-                  <div className="mt-6 space-y-1">
-                    <h2 className="text-2xl font-semibold tracking-tight">
-                      Made for You
-                    </h2>
-                    <p className="text-sm text-muted-foreground">
-                      Your personal playlists. Updated daily.
-                    </p>
-                  </div>
-                  <Separator className="my-4" />
-                  <div className="relative">
-                    <ScrollArea>
-                      <div className="flex space-x-4 pb-4">
-                        {madeForYouAlbums.map((album) => (
-                          <AlbumArtwork
-                            key={album.name}
-                            album={album}
-                            className="w-[150px]"
-                            aspectRatio="square"
-                            width={150}
-                            height={150}
-                          />
-                        ))}
-                      </div>
-                      <ScrollBar orientation="horizontal" />
-                    </ScrollArea>
-                  </div>
+                  <DentalTab />
                 </TabsContent>
                 <TabsContent
                   value="podcasts"

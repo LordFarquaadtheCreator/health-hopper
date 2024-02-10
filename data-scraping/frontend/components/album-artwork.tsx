@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { PlusCircledIcon } from "@radix-ui/react-icons";
 
@@ -13,15 +14,9 @@ import {
   ContextMenuTrigger,
 } from "./ui/context-menu";
 
-import { Album } from "../data/albums";
+// import { Album } from "../data/albums";
 import { playlists } from "../data/playlists";
-
-interface AlbumArtworkProps extends React.HTMLAttributes<HTMLDivElement> {
-  album: Album;
-  aspectRatio?: "portrait" | "square";
-  width?: number;
-  height?: number;
-}
+import { useEffect, useState } from "react";
 
 export function AlbumArtwork({
   album,
@@ -30,65 +25,51 @@ export function AlbumArtwork({
   height,
   className,
   ...props
-}: AlbumArtworkProps) {
+}: any) {
+  const [photoUrl, setPhotoUrl] = useState("");
+
+  useEffect(() => {
+    async function fetchPhoto() {
+      if (album.photos && album.photos.length > 0) {
+        const photoReference = album.photos[0].photo_reference;
+        const apiKey = process.env.NEXT_PUBLIC_GOOGLE_API; // Replace with your actual API key
+        const photoUrl = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${photoReference}&key=${apiKey}`;
+        setPhotoUrl(photoUrl);
+      }
+    }
+
+    fetchPhoto();
+  }, [album.photos]);
+
   return (
     <div className={cn("space-y-3", className)} {...props}>
-      <ContextMenu>
-        <ContextMenuTrigger>
-          <div className="overflow-hidden rounded-md">
-            <Image
-              src={album.cover}
-              alt={album.name}
-              width={width}
-              height={height}
-              className={cn(
-                "h-auto w-auto object-cover transition-all hover:scale-105",
-                aspectRatio === "portrait" ? "aspect-[3/4]" : "aspect-square"
-              )}
-            />
-          </div>
-        </ContextMenuTrigger>
-        <ContextMenuContent className="w-40">
-          <ContextMenuItem>Add to Library</ContextMenuItem>
-          <ContextMenuSub>
-            <ContextMenuSubTrigger>Add to Playlist</ContextMenuSubTrigger>
-            <ContextMenuSubContent className="w-48">
-              <ContextMenuItem>
-                <PlusCircledIcon className="mr-2 h-4 w-4" />
-                New Playlist
-              </ContextMenuItem>
-              <ContextMenuSeparator />
-              {playlists.map((playlist) => (
-                <ContextMenuItem key={playlist}>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="mr-2 h-4 w-4"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M21 15V6M18.5 18a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5ZM12 12H3M16 6H3M12 18H3" />
-                  </svg>
-                  {playlist}
-                </ContextMenuItem>
-              ))}
-            </ContextMenuSubContent>
-          </ContextMenuSub>
-          <ContextMenuSeparator />
-          <ContextMenuItem>Play Next</ContextMenuItem>
-          <ContextMenuItem>Play Later</ContextMenuItem>
-          <ContextMenuItem>Create Station</ContextMenuItem>
-          <ContextMenuSeparator />
-          <ContextMenuItem>Like</ContextMenuItem>
-          <ContextMenuItem>Share</ContextMenuItem>
-        </ContextMenuContent>
-      </ContextMenu>
-      <div className="space-y-1 text-sm">
-        <h3 className="font-medium leading-none">{album.name}</h3>
-        <p className="text-xs text-muted-foreground">{album.artist}</p>
+      <div className="overflow-hidden rounded-md">
+        <Image
+          src={
+            photoUrl ||
+            "https://images.unsplash.com/photo-1513745405825-efaf9a49315f?w=300&dpr=2&q=80"
+          }
+          alt={album.name}
+          width={width}
+          height={height}
+          className={cn(
+            "h-auto w-auto object-cover transition-all hover:scale-105",
+            aspectRatio === "portrait" ? "aspect-[4/3]" : "aspect-square"
+          )}
+        />
+      </div>
+
+      <div className="space-y-1 text-sm ">
+        <p className="text-xs text-black">{album.rating}/5</p>
+        <h3 className="font-medium pt-[0.25rem] leading-none">{album.name}</h3>
+        <p className="text-xs  text-muted-foreground">
+          {album.formatted_address}
+        </p>
+
+        <h3 className="font-medium text-lg pt-2 leading-none">
+          Our Score: 8.2/10
+        </h3>
+        {/* <p className="text-xs  text-black">Crown Service</p> */}
       </div>
     </div>
   );
