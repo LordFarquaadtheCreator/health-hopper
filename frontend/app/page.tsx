@@ -22,6 +22,8 @@ import { CalendarDateRangePicker } from "../components/date-range-picker";
 import Link from "next/link";
 import Header from "@/components/header";
 import { Flex } from "@radix-ui/themes";
+import { ComboboxDemo } from "@/components/comboBox";
+import { PopoverDemo } from "@/components/travellers";
 
 export const metadata: Metadata = {
   title: "Music App",
@@ -54,15 +56,20 @@ export default function MusicPage() {
         <Flex className="bg-background mt-10 px-40">
           <Flex>
             <Flex className="p-4 border-[1px] border-gray-300 rounded-b-none border-b-0 rounded-lg flex justify-center">
-              <Tabs defaultValue="account">
+              <Tabs defaultValue="Dental">
                 <TabsList className="bg-transparent">
-                  <TabsTrigger value="account">Dental</TabsTrigger>
-                  <TabsTrigger value="password">Password</TabsTrigger>
+                  <TabsTrigger value="Dental">Dental</TabsTrigger>
+                  <TabsTrigger value="Surgery">Surgery</TabsTrigger>
+                  <TabsTrigger value="Cancer">Cancer</TabsTrigger>
+                  <TabsTrigger value="Orthopedics">Orthopedics</TabsTrigger>
+                  <TabsTrigger value="Transplant">Transplant</TabsTrigger>
                 </TabsList>
               </Tabs>
             </Flex>
-            <Flex className="p-6 border-gray-300 rounded-t-none border-[1px] rounded-lg ">
+            <Flex className="flex flex-row p-6 gap-4 border-gray-300 rounded-t-none border-[1px] rounded-lg ">
+              <ComboboxDemo />
               <CalendarDateRangePicker />
+              <PopoverDemo />
             </Flex>
           </Flex>
           {/* <div className="grid lg:grid-cols-5"> */}
