@@ -76,8 +76,8 @@ export function AlbumArtwork({
         <div className="overflow-hidden rounded-md">
           {photoUrl ? (
             <Image
-              priority={true}
-              loading="eager"
+              // priority={true}
+              // loading="eager"
               // loading="eager"
               src={
                 photoUrl ||
