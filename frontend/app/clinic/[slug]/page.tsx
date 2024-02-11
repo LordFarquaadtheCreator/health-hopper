@@ -7,8 +7,8 @@ import {
   ResizablePanelGroup,
 } from "@/components/ui/resizable";
 import Image from "next/image";
-import { PhotoDisplay } from "@/components/photoDisplay";
-import { MiddleTabs } from "@/components/middleTabs";
+import { PhotoDisplay } from "@/components/clinic/photoDisplay";
+import { MiddleTabs } from "@/components/home/middleTabs";
 export default function Clinic({ params }: { params: { slug: string } }) {
   const [photos, setPhotos] = useState<any>([]);
   useEffect(() => {

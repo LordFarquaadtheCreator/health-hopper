@@ -12,10 +12,10 @@ import {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuTrigger,
-} from "./ui/context-menu";
+} from "../ui/context-menu";
 
 // import { Album } from "../data/albums";
-import { playlists } from "../data/playlists";
+import { playlists } from "../../data/playlists";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Skeleton } from "@radix-ui/themes";
