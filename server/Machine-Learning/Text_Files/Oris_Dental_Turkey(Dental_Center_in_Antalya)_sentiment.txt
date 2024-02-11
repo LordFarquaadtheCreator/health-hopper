@@ -1,0 +1,34 @@
+Review: Just completed my final treatment at Oris Dental and the results are so much more amazing than I expected. Cannot praise or recommend them highly enough for the care and professionalism in how they treat their patients.
+The best hospitality, staff are amazing. Everyone was lovely and helpful and made me feel welcome throughout the process. My teeth look amazing and I'm grateful for what the doctors did. I would definitely be recommending friends and family here as they just incredible with what they do!
+Many thanks.
+Sentiment: Sentiment(polarity=0.4428571428571429, subjectivity=0.6535714285714286)
+
+Review: I really appreciate your interest and tolerance, very nice people Dr.Dervişhan and Dt.Nehir doctors really do their job very well. I was very pleased with the interest and interest of the staff in the dental treatment I had, healthy smiles with Oris.
+Sentiment: Sentiment(polarity=0.42166666666666663, subjectivity=0.5333333333333333)
+
+Review: Amazing, professional and friendly staff. I could see the professionalism of the doctors. I had an emergency situation and they sorted out quickly.They have done such an amazing job. I highly recommend Oris Dental Turkey.
+Sentiment: Sentiment(polarity=0.30583333333333335, subjectivity=0.5733333333333334)
+
+Review: I visited this dental clinic for a few procedures. I have an ongoing implant - which is going great and I've had no problem or pain so far - I had a root canal treatment followed by a filling which were both amazing. The filled tooth looks just like other teeth!
+Both dentists (Dr. Dervişhan Küçük and Dr. Nehir Yapar) are highly professional and kind.
+All other staff are quite welcoming and approachable.
+Sentiment: Sentiment(polarity=0.23541666666666672, subjectivity=0.6000000000000001)
+
+Review: Not being lover of the dentist I let me teeth go , so I decided a trip to turkey was needed to sort them out , I chose this place and was not disappointed they made me feel at eas as I was very nervous I had 6 implants , crowns fittted and teeth out , they were great I would recommend this dentist to anyone .
+Sentiment: Sentiment(polarity=0.4583333333333333, subjectivity=0.6)
+
+Review: This is the best dental clinic in Antalya. They managed to safe my teeth and the end result is fabulous. They take their time to make you feel relaxed, wonderfull staff!!!
+Sentiment: Sentiment(polarity=0.7604166666666666, subjectivity=0.6)
+
+Review: Never left a dentist so happy before, you get the best service with the best hospitality. really…Thank you all
+Sentiment: Sentiment(polarity=0.7, subjectivity=0.4)
+
+Review: The best in Antalya!!!
+Sentiment: Sentiment(polarity=1.0, subjectivity=0.3)
+
+Review: The best !
+Sentiment: Sentiment(polarity=1.0, subjectivity=0.3)
+
+Review: Brought my family to this dentist. It's been a wonderful experience
+Sentiment: Sentiment(polarity=1.0, subjectivity=1.0)
+
