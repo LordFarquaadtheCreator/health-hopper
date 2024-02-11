@@ -1,0 +1,36 @@
+Review: From the initial contact to the final day the personal touches from the staff was brilliant, always ensuring the patients best interests come before profit. Always ensure you are comfortable and painless throughout. accommodation and transfers all sorted out and the staff (Shirren) was always on hand to answer any question via WhatsApp if required. Work was top class exactly what I was looking for. Again many thanks
+Sentiment: Sentiment(polarity=0.375, subjectivity=0.485)
+
+Review: Had zirconium crowns done at this clinic, and I’m absolutely in love! I would like to thank doctor Funda for her amazing job’ and I wanted to thank the team for making it an easy journey, best hotel was given and super helpful! Thank you all for your amazing hospitality and work! Can’t wait to be back for visit and see you guys again! Love guys lots! X Sarah ♥️
+Sentiment: Sentiment(polarity=0.5562499999999999, subjectivity=0.6)
+
+Review: Very grateful with our new smile, thanks to the team Let’s Smile TURKIYE Antalya, every moment we were in their country they made us feel that we were part of their family. The communication is Excellent before and after the procedure.  we recommend Lets Smile TURKIYE   .
+Sentiment: Sentiment(polarity=0.34805194805194806, subjectivity=0.3220779220779221)
+
+Review: Best clinic ever! Lovely and professional team with high end expertise. So much recommended!!!!
+Sentiment: Sentiment(polarity=0.44965625, subjectivity=0.378)
+
+Review: thanks for all on 4 implant treatment and helpful staff, best dental center in Antalya
+Sentiment: Sentiment(polarity=0.36666666666666664, subjectivity=0.19999999999999998)
+
+Review: Best Dental Clinic in Antalya Turkey
+Sentiment: Sentiment(polarity=1.0, subjectivity=0.3)
+
+Review: Gelirken aklımızda soru işaretleri vardı ama çok iyi hizmet aldık herkese tavsiye ediyorum .
+
+We had question marks when we came, but we received a very good service, I recommend it to everyone.
+
+Let's go letsmile .
+Sentiment: Sentiment(polarity=0.9099999999999999, subjectivity=0.7800000000000001)
+
+Review: Tartışmaya veya araştırmaya gerek yok güvenle gidebileceğiniz bir yer
+
+The price paid with the service received is very good. and it deserves to be the best clinic in the area
+Sentiment: Sentiment(polarity=0.955, subjectivity=0.54)
+
+Review: 
+Sentiment: Sentiment(polarity=0.0, subjectivity=0.0)
+
+Review: 
+Sentiment: Sentiment(polarity=0.0, subjectivity=0.0)
+

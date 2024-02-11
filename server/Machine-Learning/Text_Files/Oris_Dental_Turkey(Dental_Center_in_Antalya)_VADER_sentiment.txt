@@ -1,0 +1,34 @@
+Review: Just completed my final treatment at Oris Dental and the results are so much more amazing than I expected. Cannot praise or recommend them highly enough for the care and professionalism in how they treat their patients.
+The best hospitality, staff are amazing. Everyone was lovely and helpful and made me feel welcome throughout the process. My teeth look amazing and I'm grateful for what the doctors did. I would definitely be recommending friends and family here as they just incredible with what they do!
+Many thanks.
+Polarity Scores: {'neg': 0.042, 'neu': 0.597, 'pos': 0.362, 'compound': 0.9903}
+
+Review: I really appreciate your interest and tolerance, very nice people Dr.Dervişhan and Dt.Nehir doctors really do their job very well. I was very pleased with the interest and interest of the staff in the dental treatment I had, healthy smiles with Oris.
+Polarity Scores: {'neg': 0.0, 'neu': 0.525, 'pos': 0.475, 'compound': 0.9797}
+
+Review: Amazing, professional and friendly staff. I could see the professionalism of the doctors. I had an emergency situation and they sorted out quickly.They have done such an amazing job. I highly recommend Oris Dental Turkey.
+Polarity Scores: {'neg': 0.056, 'neu': 0.649, 'pos': 0.294, 'compound': 0.8999}
+
+Review: I visited this dental clinic for a few procedures. I have an ongoing implant - which is going great and I've had no problem or pain so far - I had a root canal treatment followed by a filling which were both amazing. The filled tooth looks just like other teeth!
+Both dentists (Dr. Dervişhan Küçük and Dr. Nehir Yapar) are highly professional and kind.
+All other staff are quite welcoming and approachable.
+Polarity Scores: {'neg': 0.0, 'neu': 0.746, 'pos': 0.254, 'compound': 0.9702}
+
+Review: Not being lover of the dentist I let me teeth go , so I decided a trip to turkey was needed to sort them out , I chose this place and was not disappointed they made me feel at eas as I was very nervous I had 6 implants , crowns fittted and teeth out , they were great I would recommend this dentist to anyone .
+Polarity Scores: {'neg': 0.071, 'neu': 0.809, 'pos': 0.119, 'compound': 0.5703}
+
+Review: This is the best dental clinic in Antalya. They managed to safe my teeth and the end result is fabulous. They take their time to make you feel relaxed, wonderfull staff!!!
+Polarity Scores: {'neg': 0.0, 'neu': 0.649, 'pos': 0.351, 'compound': 0.939}
+
+Review: Never left a dentist so happy before, you get the best service with the best hospitality. really…Thank you all
+Polarity Scores: {'neg': 0.0, 'neu': 0.549, 'pos': 0.451, 'compound': 0.9342}
+
+Review: The best in Antalya!!!
+Polarity Scores: {'neg': 0.0, 'neu': 0.371, 'pos': 0.629, 'compound': 0.7249}
+
+Review: The best !
+Polarity Scores: {'neg': 0.0, 'neu': 0.308, 'pos': 0.692, 'compound': 0.6696}
+
+Review: Brought my family to this dentist. It's been a wonderful experience
+Polarity Scores: {'neg': 0.0, 'neu': 0.73, 'pos': 0.27, 'compound': 0.5719}
+

@@ -1,0 +1,49 @@
+Review: Rated 5 out of 5 stars
+Good day, everyone   
+I've just finished my teeth done at this clinic. Now,thanks to them, I have an amazing smile.
+I just want to mention a few things, Miss Meltem was very professional and guided me in perfect English, step by step all the procedures, and explained to me all my questions and my concerns.
+Mrs. Esra is a perfectionist and very professional as well, plus the fact that she is an angel    with all her patience that she had with me.
+And of course, the last but not the least, Mr. Erdem, just amazing and a true master of dentistry.
+Overall, I felt welcomed and treated with respect by everyone at the clinic.
+Thank you all for an amazing job
+Polarity Scores: {'neg': 0.009, 'neu': 0.751, 'pos': 0.241, 'compound': 0.986}
+
+Review: Just finished my treatment with Ozdemir Dental Centre.  I can honestly say that they are all highly professional and friendly.  The process from start to finish was very smooth. I can recommend them 100%
+Polarity Scores: {'neg': 0.0, 'neu': 0.776, 'pos': 0.224, 'compound': 0.8387}
+
+Review: Great service
+I visited the clinic in August this year while we’ve been on holiday in Antalya. Beautiful clinic with really friendly people.
+Few days ago they’ve been to Liverpool Dr Erdem and few more colleagues. We met them for consultation. Very well organised team in a nice hotel     
+Even small entertainment place in corner of room for my 2 little boys   
+Hopefully we( me and my wife)can go to Antalya soon for treatment
+Thanks again Dr Erdem and Büşra and Batur bay and others
+Polarity Scores: {'neg': 0.0, 'neu': 0.734, 'pos': 0.266, 'compound': 0.9788}
+
+Review: This place is first class.
+A big thank you to ursin and a very special assistent.
+(Izmet). Keep up the good work as i will recomend you to anyone needing medical treatment.
+Polarity Scores: {'neg': 0.0, 'neu': 0.776, 'pos': 0.224, 'compound': 0.8122}
+
+Review: Booked a laser teeth whitening treatment for my Türkiye holiday. The treatment was quite straight forward and the place was very friendly and professional.
+
+Meltem who works there was very sweet and helpful!
+Polarity Scores: {'neg': 0.0, 'neu': 0.651, 'pos': 0.349, 'compound': 0.9329}
+
+Review: A great dental clinic with amazing , friendly and well trained staff. Honest consultation and a very quality job. Went in for a filling and scaling, then i ve been told that i do not need to fill it in as it is good enough. That is a very high level of business ethics and professionalism. The dental job was quick, comfortable , clean and at an amazing price. I totally recommend this clinic to everyone specially , international visitors and expats.
+Polarity Scores: {'neg': 0.0, 'neu': 0.692, 'pos': 0.308, 'compound': 0.9848}
+
+Review: Me and my husband arrived home from Turkey on Saturday after visiting Ozdemir Dental centre. We stayed at Tema 242 for our stay and was more than happy with the free accommodation.
+I had 24 zirconium crowns fitted, before arriving in turkey I was absolutely terrified at the thought of having my teeth shaved down but was put at complete ease from the moment we entered the dental centre. All the staff were absolutely wonderful and so friendly. I can’t thank Batur enough for helping us through the whole process.
+
+I couldn’t be happier with my new smile and highly recommend Ozdemir dental to everyone. A pain free positive experience.
+Polarity Scores: {'neg': 0.048, 'neu': 0.648, 'pos': 0.304, 'compound': 0.9905}
+
+Review: Over the years I have had various dental procedures carried out by Dr Erdem to the highest standard. The clinic is very modern and hygienic with the most up to date equipment. All of the clinic staff are very professional and friendly. My latest course of treatment was with Dr Esra and Dr Erdem. I had deep cleaning, whitening and afterwards Dr Esra replaced 2 very old crowns and in addition I had composite bonding to 8 of my upper teeth which has transformed my smile. I can honestly say it was completely painless, the whole procedure was completed within the time frame and I am so thrilled with the results which are beautiful and very natural. The prices are very reasonable and I highly recommend this clinic.
+Polarity Scores: {'neg': 0.0, 'neu': 0.829, 'pos': 0.171, 'compound': 0.9741}
+
+Review: Amazing service from start to finish, a dentist where they genuinely care for you and your teeth not just what looks best/costs more. All the staff are so friendly and Helpful. Any issues are dealt with promptly the service they provided is outstanding. I recommend this place to everyone it’s really affordable, clean and their patient care is impeccable.
+Polarity Scores: {'neg': 0.0, 'neu': 0.655, 'pos': 0.345, 'compound': 0.9796}
+
+Review: Glad to have found this clinic on facebook. Batur was excellent in communicating with me and organising my travel from airport to hotel to clinic. Dr Melisa and her assistant Bushra did a fantastic job on the the zirconia crowns I got there. Thank all for your good work!
+Polarity Scores: {'neg': 0.0, 'neu': 0.733, 'pos': 0.267, 'compound': 0.9432}
+

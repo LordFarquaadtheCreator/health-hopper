@@ -134,3 +134,4 @@ dist
 .pnp.*
 
 frontend/bun.lockb
+frontend/yarn.lock

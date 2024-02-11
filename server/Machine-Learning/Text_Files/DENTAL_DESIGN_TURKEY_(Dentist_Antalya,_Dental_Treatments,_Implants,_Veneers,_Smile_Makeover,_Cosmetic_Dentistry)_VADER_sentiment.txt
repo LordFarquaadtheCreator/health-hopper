@@ -1,0 +1,41 @@
+Review: Absolutely brilliant I feel like a complete different person . The teeth have made me more confidence then ever. Can’t thank the dental design enough . Experience was absolutely fabulous will definitely recommend.
+
+Thank you.
+Polarity Scores: {'neg': 0.0, 'neu': 0.526, 'pos': 0.474, 'compound': 0.973}
+
+Review: By far the best place.
+I have stayed in the same hotel with other pacients from other clinics . Dental design is by far above all of them.
+Life changing . The staff is amazing and the quality of the products they use and the service they provide is just brilliant.
+Thanks for making my life great again ❤️
+Polarity Scores: {'neg': 0.0, 'neu': 0.745, 'pos': 0.255, 'compound': 0.9628}
+
+Review: Truly brilliant experience from start to finish. Was very nervous at first as first time travelling abroad to get my teeth fixed but best decision I made. The practice itself was impeccably tidy and had high tech equipment. The dentist was very knowledgeable and experienced. The staff were 10/10. So happy I chose Dental Design Turkey. Will definitely returning for more work. Thank you so much.
+Polarity Scores: {'neg': 0.02, 'neu': 0.697, 'pos': 0.283, 'compound': 0.9758}
+
+Review: From my initial point of contact last year the service I have received from Dental Design has been unbelievable, all questions via WhatsApp before landing were answered within the hour and I was kindly met at the airport by the friendly driver. The building is extremely clean and every person you meet is kind and friendly. I was treated by Fadime who is absolutely amazing at what she does. She made sure I was always comfortable and pain-free..  constantly reassuring me and making me feel good. The aftercare has been great and I'm so glad I went with Dental Design. I can't recommend them enough and will return for further work in future. Thank you again you have changed my life and I will be forever thankful
+Polarity Scores: {'neg': 0.013, 'neu': 0.692, 'pos': 0.295, 'compound': 0.9924}
+
+Review: I got my 20 crowns a month ago now and I could not be happier with my decision to choose the team at Dental Design Turkey to do the work. From the moment I walked in the whole staff was professional, understanding, kind, and friendly. I had complete confidence in Doctor Hamide and Doctor Fadime. They explained everything, answered all of my questions, and they were completely aboveboard about everything, and trustworthy. I cannot recommend Dental Design highly enough! 5 stars for everything! Thank you all so much!
+Polarity Scores: {'neg': 0.048, 'neu': 0.788, 'pos': 0.164, 'compound': 0.9184}
+
+Review: Wow, what an amazing experience, they have the best doctors and dentist at design turkey! I can not recommend them enough! I have had zero pain, genuinely the best experience in a dentist Iv ever had! Thank you so much to the full team ❤️
+Polarity Scores: {'neg': 0.085, 'neu': 0.611, 'pos': 0.304, 'compound': 0.9429}
+
+Review: I was very scared to do this step but this place has made me so happy and confident the team here treat you so good and very kind they made me feel I’m in very good hands. I want to thank everyone for this amazing work I did a full crowns for my teeth now I can smile more confident. I really advice everyone to come here.❤️
+Polarity Scores: {'neg': 0.02, 'neu': 0.535, 'pos': 0.445, 'compound': 0.994}
+
+Review: I couldn’t recommend Dental Design enough, they have truly transformed my teeth, the treatment and care has been the best, they are so welcoming and made me feel at ease, I would definitely recommend them to anyone who wants to transform there smile :)
+Polarity Scores: {'neg': 0.0, 'neu': 0.533, 'pos': 0.467, 'compound': 0.9813}
+
+Review: I came to make my teeth done here and they look absolutely amazing. They look super natural very amazing job. Now I know I can smile with more confidence. All thanks to my doctor and the nice staff
+Polarity Scores: {'neg': 0.0, 'neu': 0.53, 'pos': 0.47, 'compound': 0.9791}
+
+Review: I recently had the pleasure of getting veneers done, and let me tell you, the results are beyond amazing!     
+
+From the moment I stepped into the dental design, I was greeted with the warmest smiles and exceptional service. The staff made me feel so comfortable and at ease throughout the entire process. Their professionalism and attention to detail truly impressed me.   
+
+Now, let's talk about the end result - WOW! My veneers have completely transformed my smile, and I couldn't be happier!
+
+Thank you once again to the incredible team for their outstanding service and for giving me a smile that I'm proud to show off!
+Polarity Scores: {'neg': 0.034, 'neu': 0.625, 'pos': 0.341, 'compound': 0.9921}
+
