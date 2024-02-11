@@ -1,0 +1,3 @@
+Review: Excellent dentist , friendly , efficient and extremely Professional .  The team put you at easy and offer a VIP experience. I would recommend to everyone!
+Polarity Scores: {'neg': 0.0, 'neu': 0.507, 'pos': 0.493, 'compound': 0.9608}
+

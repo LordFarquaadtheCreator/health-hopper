@@ -1,0 +1,35 @@
+Review: I 100% recommend Dental Support turkey . They are a perfect team who work with professionalism and take care about everything what patient needs . I had a perfect holiday and a perfect smile all  in one week. Don’t hesitate to contact them for the best for your teeth. And the most important 100% no pain , I had 5 implants and the next day I could eat without problems and do all my normal activities . I’m happy to smile again with their help
+Polarity Scores: {'neg': 0.018, 'neu': 0.585, 'pos': 0.397, 'compound': 0.9912}
+
+Review: I had my implants and crowns made at Dental Support Turkey. all care and guidance is good, you are picked up from the airport by their shuttle and every day from the hotel you are taken back and forth to their clinic, you get different fittings of crowns. you will be warmly welcomed. Dr. Serhat and Dr. Berna , Dr Halill Ibrahim really did a nice job. you get a perfect smile
+Polarity Scores: {'neg': 0.0, 'neu': 0.734, 'pos': 0.266, 'compound': 0.9689}
+
+Review: Hi,just wanted to share my experience with detal support turkey.I had some dental work done whilst i was away for  a few days. The hotel they reserved for  me was absolutely fabulous.There  service was outstanding. The team were very friendly and. Supportive.  The  after care is brilliant .i like how they check up on you with phone calls and messages. I would recommend DST 100%.
+Polarity Scores: {'neg': 0.0, 'neu': 0.676, 'pos': 0.324, 'compound': 0.9773}
+
+Review: Today today I did my first visit for my implants took 4 days to finish and today I feel way better and I look  way better without teeth and I'm very satisfied with the great job they did to my teeth they were very friendly and professional I recommend them to any one who needs implant. Look at my picture and let speak  for it self they did a great job.
+Polarity Scores: {'neg': 0.0, 'neu': 0.735, 'pos': 0.265, 'compound': 0.9722}
+
+Review: Where do I even start! From the first day we talked to Dr Serhat, he was so kind and informative and answered every question of mine with sincerity.
+The day we arrived from toronto we met Lily, who had come to pick us up at the airport and also met Dr serhat and immediately we could tell that we are in good hands. From the transport to the accommodation to our experience with the clinic, everything was 5 stars.
+The next day the car came to pick us up to go to the dental clinic and wow! It is such a clean environment  and there we were met with all other doctors who without wasting any time started with xrays, and we were then explained exactly what our treatment plan would be and how much it would cost. Anytime we had a question was answered with honesty.
+Both my husband and myself opted for the "Hollywood smile" package with zirconium crowns.
+
+We are very happy with our outcome, and we Thank all the doctors, with a big shout out to Dr serhat and Lily. we surely recommend the creative dental clinic for any small or big dental work you have. This is the place! You will not be disappointed.
+Polarity Scores: {'neg': 0.0, 'neu': 0.831, 'pos': 0.169, 'compound': 0.9898}
+
+Review: As a dentist myself, I recently had the opportunity to receive canal treatment and filling services from the Dental Support Turkey team, and I must say, I am extremely satisfied with the level of care I received. The entire process was carried out with utmost professionalism and precision. The team demonstrated exceptional expertise and attention to detail throughout the canal treatment, ensuring optimal results. The fillings I received were of high quality, seamlessly blending with my natural teeth. I highly recommend Dental Support Turkey for their exceptional dental services and commitment to patient satisfaction.
+Polarity Scores: {'neg': 0.0, 'neu': 0.734, 'pos': 0.266, 'compound': 0.9802}
+
+Review: I recently received dental support in Turkey, including fillings and teeth cleaning services, and I am extremely satisfied with the quality of care I received. The staff was professional, attentive, and made me feel comfortable throughout the entire process. The dental fillings were expertly done, and the teeth cleaning was thorough and left my teeth feeling fresh and rejuvenated. I highly recommend their services to anyone seeking dental treatment in Turkey.
+Polarity Scores: {'neg': 0.0, 'neu': 0.772, 'pos': 0.228, 'compound': 0.9508}
+
+Review: I am delighted with the service and professionalism of the staff at CREATIVE Smiles Turkey!!!!! The entire treatment was quick and painless. I recommend this clinic to everyone!!! I will definitely come again!!!!
+Polarity Scores: {'neg': 0.0, 'neu': 0.592, 'pos': 0.408, 'compound': 0.9559}
+
+Review: Everything was smooth, I got support, communication. Great team, professional. I did not feel any pain after the dental treatment. I will also treat my teeth at this clinic in the future
+Polarity Scores: {'neg': 0.0, 'neu': 0.696, 'pos': 0.304, 'compound': 0.9043}
+
+Review: I recently had a smile makeover with laminate veneers, and I am absolutely thrilled with the results. The process was smooth and well-coordinated, thanks to the skilled and knowledgeable dental team. The laminate veneers have completely transformed my smile, giving me a natural-looking and beautifully aligned set of teeth. The attention to detail and precision in crafting each veneer was remarkable. I am now more confident than ever, and I can't stop smiling! If you're considering a smile design with laminate veneers, I highly recommend it for a stunning and life-changing transformation.
+Polarity Scores: {'neg': 0.021, 'neu': 0.68, 'pos': 0.298, 'compound': 0.9836}
+
