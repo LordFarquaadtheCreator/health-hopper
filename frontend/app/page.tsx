@@ -16,7 +16,10 @@ import { AlbumArtwork } from "../components/album-artwork";
 import { Menu } from "../components/menu";
 import { PodcastEmptyPlaceholder } from "../components/podcast-empty-placeholder";
 import { Sidebar } from "../components/sidebar";
+
 import { listenNowAlbums, madeForYouAlbums } from "../data/albums";
+import { listenNowAlbums } from "../data/albums";
+
 import { playlists } from "../data/playlists";
 import { CalendarDateRangePicker } from "../components/date-range-picker";
 import Link from "next/link";
@@ -52,7 +55,9 @@ export default function MusicPage() {
         />
       </div>
       <div className="hidden md:block">
+
         <Header />
+
         {/* make this a layout */}
         {/* <div className="border-t"> */}
         <Flex className="bg-background mt-14 px-20">

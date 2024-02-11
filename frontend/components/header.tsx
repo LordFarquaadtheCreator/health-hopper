@@ -10,6 +10,7 @@ export default function Header() {
   return (
     <div className="flex p-4 flex-row items-center justify-between px-10 border-b">
       <Link href="" className="flex flex-row items-center gap-[4px] ">
+      <Link href="/" className="flex flex-row items-center gap-[4px] ">
         {/* <SketchLogoIcon className="w-[2.0rem] h-[2.0rem] text-[#3B9EFF] bg-slate-100 p-[0.3rem] rounded-lg" /> */}
         {/* <Image
           alt=""
