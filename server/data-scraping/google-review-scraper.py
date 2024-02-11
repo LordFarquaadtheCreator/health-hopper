@@ -1,4 +1,3 @@
-from xml.etree.ElementPath import xpath_tokenizer_re
 from selenium import webdriver
 
 # Create a new instance of the Firefox driver
@@ -29,6 +28,3 @@ driver.quit()
 
 # if __name__ == "__main__":
 #     print("hello")
-
-"""This file is no longer being used"""
-    
