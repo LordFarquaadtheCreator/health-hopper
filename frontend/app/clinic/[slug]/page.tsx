@@ -38,6 +38,7 @@ export default function Clinic({ params }: { params: { slug: string } }) {
         <Image
           width={500}
           height={300}
+          priority={true}
           className="aspect-[4/3] object-cover"
           alt=""
           src={photos[0]}
@@ -46,6 +47,7 @@ export default function Clinic({ params }: { params: { slug: string } }) {
           <Image
             width={200}
             height={100}
+            priority={true}
             alt=""
             className="flex-1 aspect-[4/3] object-cover"
             src={photos[1]}
@@ -53,6 +55,7 @@ export default function Clinic({ params }: { params: { slug: string } }) {
           <Image
             width={200}
             height={100}
+            priority={true}
             alt=""
             className="flex-1 aspect-[4/3] object-cover"
             src={photos[2]}
@@ -62,6 +65,7 @@ export default function Clinic({ params }: { params: { slug: string } }) {
           <Image
             width={200}
             height={100}
+            priority={true}
             alt=""
             className="flex-1 aspect-[4/3] object-cover"
             src={photos[3]}
@@ -69,6 +73,7 @@ export default function Clinic({ params }: { params: { slug: string } }) {
           <Image
             width={200}
             height={100}
+            priority={true}
             alt=""
             className="flex-1 aspect-[4/3] object-cover"
             src={photos[4]}
@@ -77,6 +82,7 @@ export default function Clinic({ params }: { params: { slug: string } }) {
         <Image
           width={200}
           height={100}
+          priority={true}
           alt=""
           className="flex-1"
           src={photos[5]}
