@@ -2,7 +2,7 @@ import { Flex } from "@radix-ui/themes";
 import Image from "next/image";
 export function PhotoDisplay({ photos }: any) {
   return (
-    <Flex className=" justify flex flex-row flex-1 gap-[0.15rem] rounded-lg border p-2 ">
+    <Flex className=" justify flex flex-row flex-1 gap-[0.15rem] rounded-lg border p-2 rounded-b-none ">
       <Image
         width={500}
         height={300}
