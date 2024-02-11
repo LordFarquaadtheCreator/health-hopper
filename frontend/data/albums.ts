@@ -152,55 +152,7 @@ export const listenNowAlbums: any = [
     ],
     user_ratings_total: 90,
   },
-  {
-    business_status: "OPERATIONAL",
-    formatted_address:
-      "Fener, Dental Design Turkey, Tekelio\u011flu Cd. No:62 A 07160, 07160 Muratpa\u015fa/Antalya, T\u00fcrkiye",
-    geometry: {
-      location: {
-        lat: 36.8526995,
-        lng: 30.7517603,
-      },
-      viewport: {
-        northeast: {
-          lat: 36.85411212989272,
-          lng: 30.75313952989272,
-        },
-        southwest: {
-          lat: 36.85141247010728,
-          lng: 30.75043987010728,
-        },
-      },
-    },
-    icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
-    icon_background_color: "#7B9EB0",
-    icon_mask_base_uri:
-      "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-    name: "DENTAL DESIGN TURKEY (Dentist Antalya, Dental Treatments, Implants, Veneers, Smile Makeover, Cosmetic Dentistry)",
-    opening_hours: {
-      open_now: false,
-    },
-    photos: [
-      {
-        height: 1080,
-        html_attributions: [
-          '<a href="https://maps.google.com/maps/contrib/105514783818472695786">A Google User</a>',
-        ],
-        photo_reference:
-          "AWU5eFjRFL6D6YbSOnXxOprGqg5WHDJBNEO-n2U8rnt-G54F3TmNKD8-VcBDvLAjUKy-4tM5Kc1SwLM-BaRZHpDHoAMISN5ytDofrZ-sHoDnogALraHfxhokfyToif2ZwcaOSVseKXwjHSCcPJ36Gug0gBs-G0s8X2h1Y2ZhnKOwWigHV-9L",
-        width: 1080,
-      },
-    ],
-    place_id: "ChIJ4RaX8babwxQRhq5TXSCxmlc",
-    plus_code: {
-      compound_code: "VQ32+3P Muratpa\u015fa, Antalya, T\u00fcrkiye",
-      global_code: "8G8GVQ32+3P",
-    },
-    rating: 4.9,
-    reference: "ChIJ4RaX8babwxQRhq5TXSCxmlc",
-    types: ["dentist", "health", "point_of_interest", "establishment"],
-    user_ratings_total: 216,
-  },
+
   {
     business_status: "OPERATIONAL",
     formatted_address:

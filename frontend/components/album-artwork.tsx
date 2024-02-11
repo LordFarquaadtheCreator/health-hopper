@@ -18,6 +18,7 @@ import {
 import { playlists } from "../data/playlists";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { Skeleton } from "@radix-ui/themes";
 
 export function AlbumArtwork({
   album,
@@ -61,20 +62,28 @@ export function AlbumArtwork({
     <Link href={`/clinic/${album.place_id}`}>
       <div className={cn("space-y-3", className)} {...props}>
         <div className="overflow-hidden rounded-md">
-          <Image
-            src={
-              photoUrl ||
-              "https://images.unsplash.com/photo-1513745405825-efaf9a49315f?w=300&dpr=2&q=80"
-            }
-            alt={album.name}
-            width={width}
-            onLoad={handleImageLoad}
-            height={height}
-            className={cn(
-              "h-auto w-auto object-cover transition-all hover:scale-105",
-              aspectRatio === "portrait" ? "aspect-[4/3]" : "aspect-square"
-            )}
-          />
+          {photoUrl ? (
+            <Image
+              src={
+                photoUrl ||
+                "https://images.unsplash.com/photo-1513745405825-efaf9a49315f?w=300&dpr=2&q=80"
+              }
+              alt={album.name}
+              width={width}
+              onLoad={handleImageLoad}
+              height={height}
+              className={cn(
+                "h-auto w-auto object-cover transition-all hover:scale-105",
+                aspectRatio === "portrait" ? "aspect-[4/3]" : "aspect-square",
+                `min-w-[${width}px]`
+              )}
+            />
+          ) : (
+            <Skeleton
+              // key={index}
+              className="w-[225px] min-w-[225px] h-[225px] min-h-[225px]"
+            />
+          )}
         </div>
 
         <div className="space-y-1 text-sm ">

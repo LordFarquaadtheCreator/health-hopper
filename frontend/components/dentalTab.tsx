@@ -12,7 +12,7 @@ export function DentalTab() {
 
   useEffect(() => {
     // Simulate a fetch call
-    setTimeout(() => setLoading(false), 1000); // Remove this line when implementing actual data fetching
+    setTimeout(() => setLoading(false), 1500); // Remove this line when implementing actual data fetching
     // Fetch your data here and set loading to false when done
     // fetch different images when loadign
   }, []);
@@ -30,8 +30,8 @@ export function DentalTab() {
       <Separator className="my-4" />
       <div className="relative">
         <ScrollArea type="scroll">
-          <div className="flex space-x-4 pb-4 flex-0 overflow-x-scroll no-scrollbar">
-            {isLoading
+          <div className="flex space-x-4 pb-12 overflow-y-hidden flex-0 overflow-x-scroll no-scrollbar">
+            {/* {isLoading
               ? Array(10)
                   .fill(0)
                   .map((_, index) => (
@@ -39,18 +39,19 @@ export function DentalTab() {
                       key={index}
                       className="w-[225px] min-w-[225px] h-[225px] min-h-[225px]"
                     />
-                  ))
-              : listenNowAlbums.slice(0, 11).map((album: any) => (
-                  <AlbumArtwork
-                    key={album.name}
-                    album={album}
-                    className="w-[225px] min-w-[225px]"
-                    aspectRatio="portrait"
-                    //   setLoading={setLoading}
-                    width={225}
-                    height={200}
-                  />
-                ))}
+                  )) */}
+            {/* :  */}
+            {listenNowAlbums.slice(0, 11).map((album: any) => (
+              <AlbumArtwork
+                key={album.name}
+                album={album}
+                className="w-[225px] "
+                aspectRatio="portrait"
+                //   setLoading={setLoading}
+                width={225}
+                height={200}
+              />
+            ))}
           </div>
           <ScrollBar orientation="horizontal" />
         </ScrollArea>
@@ -64,7 +65,7 @@ export function DentalTab() {
       <Separator className="my-4" />
       <div className="relative">
         <ScrollArea type="scroll">
-          <div className="flex space-x-4 pb-4">
+          <div className="flex space-x-4 pb-12 overflow-x-scroll overflow-y-hidden no-scrollbar">
             {isLoading
               ? Array(10)
                   .fill(0)
@@ -75,12 +76,12 @@ export function DentalTab() {
                     />
                   ))
               : listenNowAlbums
-                  .slice(15, 24)
+                  .slice(16, 24)
                   .map((album: any) => (
                     <AlbumArtwork
                       key={album.name}
                       album={album}
-                      className="w-[150px]"
+                      className="w-[150px] "
                       aspectRatio="square"
                       width={150}
                       small={true}
