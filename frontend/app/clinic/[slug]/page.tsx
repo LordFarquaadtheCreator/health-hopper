@@ -79,7 +79,7 @@ export default function Clinic({ params }: { params: { slug: string } }) {
               </Flex>
               <Flex className="mt-4 flex flex-row gap-2 font-normal  ">
                 <Badge className="bg-green-700 font-medium w-10">
-                  {(Math.round(score * 100) / 100) * 2}
+                  {(Math.round((score - 0.6) * 100) / 100) * 2}
                 </Badge>
                 <h3 className=" text-md">Wonderful</h3>
               </Flex>
