@@ -6,7 +6,7 @@ from transformers import pipeline
 import json
 
 # Load JSON data from file
-with open('C:\\Users\\dasa7\\OneDrive\\Desktop\\VS_Android_Projects\\health-hopper\\server\\data-scraping\\data-with-reviews.json', 'r', encoding='utf-8') as f:
+with open('../data-scraping/data-with-reviews.json', 'r', encoding='utf-8') as f:
     json_data = json.load(f)
 
 # Initialize the new sentiment analysis pipeline with the specified model

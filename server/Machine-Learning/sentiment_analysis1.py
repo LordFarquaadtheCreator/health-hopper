@@ -4,7 +4,7 @@ from transformers import pipeline
 # note in python, the public functions are automatically exported while private functions start with an underline instead
 
 # Load JSON data from file
-with open('C:\\Users\\dasa7\\OneDrive\\Desktop\\VS_Android_Projects\\health-hopper\\server\\data-scraping\\data-with-reviews.json', 'r', encoding='utf-8') as f:
+with open('../data-scraping/data-with-reviews.json', 'r', encoding='utf-8') as f:
     json_data = json.load(f)
     
 # Initialize a list to hold lists of review snippets for each company
