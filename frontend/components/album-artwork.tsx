@@ -38,15 +38,19 @@ export function AlbumArtwork({
       if (album.photos && album.photos.length > 0) {
         const res = await fetch(`/api/photo?place_id=${album.place_id}`);
         const data = await res.json();
-
+        console.log(data);
         const random = Math.floor(
           Math.random() * data.data.result.photos.length
         );
 
         const photoReference = data.data.result.photos[random].photo_reference;
 
-        const apiKey = process.env.NEXT_PUBLIC_GOOGLE_API; // Replace with your actual API key
-        const photoUrl = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${photoReference}&key=${apiKey}`;
+        const apiKey = process.env.NEXT_PUBLIC_GOOGLE_API;
+        const maxWidth = 300;
+        const maxHeight = 300;
+        // Replace with your actual API key
+        const photoUrl = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=${maxWidth}&maxheight=${maxHeight}&photoreference=${photoReference}&key=${apiKey}`;
+
         setPhotoUrl(photoUrl);
       }
     }
@@ -64,20 +68,18 @@ export function AlbumArtwork({
         <div className="overflow-hidden rounded-md">
           {photoUrl ? (
             <Image
-              priority={true}
-              loading="eager"
+              // loading="eager"
               src={
                 photoUrl ||
                 "https://images.unsplash.com/photo-1513745405825-efaf9a49315f?w=300&dpr=2&q=80"
               }
               alt={album.name}
               width={width}
-              onLoad={handleImageLoad}
               height={height}
               className={cn(
                 "h-auto w-auto object-cover transition-all hover:scale-105",
                 aspectRatio === "portrait" ? "aspect-[4/3]" : "aspect-square",
-                `min-w-[${width}px]`
+                `min-w-[${width}px] min-h-[${height}px]`
               )}
             />
           ) : (

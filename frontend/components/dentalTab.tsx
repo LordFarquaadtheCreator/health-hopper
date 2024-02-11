@@ -65,7 +65,7 @@ export function DentalTab() {
       <Separator className="my-4" />
       <div className="relative">
         <ScrollArea type="scroll">
-          <div className="flex space-x-4 pb-12 overflow-x-scroll overflow-y-hidden no-scrollbar">
+          <div className="flex space-x-4 pb-16 overflow-x-scroll overflow-y-hidden no-scrollbar">
             {isLoading
               ? Array(10)
                   .fill(0)
@@ -81,7 +81,7 @@ export function DentalTab() {
                     <AlbumArtwork
                       key={album.name}
                       album={album}
-                      className="w-[150px] "
+                      className="w-[150px] min-w-[150px] h-[150px] min-h-[150px]"
                       aspectRatio="square"
                       width={150}
                       small={true}
