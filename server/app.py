@@ -16,7 +16,7 @@ app = Flask(__name__)
 def hello():
   return "Hello World!"
 
-@app.route("/get_teeth_results/<path_to_image>")
+@app.route("/get_teeth_results")
 def get_teeth_res() -> list:
   # response = requests.get(path_to_image)
   image = request.files['image']
