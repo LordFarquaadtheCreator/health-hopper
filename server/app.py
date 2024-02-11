@@ -63,25 +63,22 @@ def transform_to_model(location: dict) -> dict:
     return location
 
 
-@app.route("/<placeID>")
-def get_pred(place_ID: str) -> float:
+@app.route("/get_pred_val/<place_ID>")
+def get_pred(place_ID: str) -> str:
   with open("data-scraping/data-fixed.json", 'r') as file:
-    data = json.loads(file.read())
+    unfiltered_data = json.loads(file.read())
 
-  location = [obj for obj in data if obj['place_id'] == place_ID]
-  # print(location[0])
-  # exit()
-  if len(location) == 0:
-    return "Place not found"
-  
-  # manifacture consistent labels from the data
-  location_data = transform_to_model(dict(location[0]))
-  # doesn't have embeddings
-  # prompt model to interpret place information
-  model = load('./data-scraping/model.joblib')
-  # return model's interpretation
-  return model.predict(location_data)
+  location = [obj for obj in unfiltered_data if obj['place_id'] == place_ID][0]
+  # print(location)
+  lat = location["geometry"]["location"]["lat"]
+  lng = location["geometry"]["location"]["lng"]
+  print(lat, lng)
+
+  filtered_data = pd.read_csv("./data-scraping/data-with-predicted-value.csv")
+  filtered_data.set_index(['lat', 'lng'], inplace=True)
+
+  x = (filtered_data.loc[(lat, lng)])
+  return str(x.iloc[0]["predicted_value"])
 
 if __name__ == "__main__":
-  # app.run()
-  print(get_pred("ChIJW0z48OOawxQRwnqKkyOEzYY"))
+  app.run(debug=True)
