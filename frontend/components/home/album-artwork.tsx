@@ -112,7 +112,8 @@ export function AlbumArtwork({
           )}
           {!small && (
             <h3 className="font-medium text-lg pt-2 leading-none">
-              Our Score: {(Math.round(score * 100) / 100) * 2}/10
+              Our Score: {(Math.round((score - 0.6) * 100) / 100) * 2}
+              /10
             </h3>
           )}
           {/* <p className="text-xs  text-black">Crown Service</p> */}
