@@ -17,8 +17,10 @@ def hello():
   return "Hello World!"
 
 @app.route("/get_teeth_results")
-def get_teeth_res() -> list:
+def get_teeth_res() -> list :
+  # path_to_image = request.args.get('path_to_image')
   # response = requests.get(path_to_image)
+  # image = response.content
   image = request.files['image']
   img = Image.open(BytesIO(image))
 
@@ -29,7 +31,7 @@ def get_teeth_res() -> list:
 
 @app.route("/get_pred_val/<place_ID>")
 def get_pred(place_ID: str) -> str:
-  with open("data-scraping/data-fixed.json", 'r') as file:
+  with open("data-fixed.json", 'r') as file:
     unfiltered_data = json.loads(file.read())
 
   location = [obj for obj in unfiltered_data if obj['place_id'] == place_ID][0]
@@ -38,18 +40,16 @@ def get_pred(place_ID: str) -> str:
   lng = location["geometry"]["location"]["lng"]
   print(lat, lng)
 
-  filtered_data = pd.read_csv("./data-scraping/data-with-predicted-value.csv")
+  filtered_data = pd.read_csv("./data-with-predicted-value.csv")
   filtered_data.set_index(['lat', 'lng'], inplace=True)
 
   x = (filtered_data.loc[(lat, lng)])
   return str(x.iloc[0]["predicted_value"])
 
 if __name__ == "__main__":
-  # app.run(debug=True)
   feature_extractor = ViTImageProcessor.from_pretrained('google/vit-base-patch16-224')
   check_aligned_model = ViTForImageClassification.from_pretrained('steven123/Check_Aligned_Teeth')
   check_gum_model = ViTForImageClassification.from_pretrained('steven123/Check_Gum_Teeth')
-  check_teeth_model = ViTForImageClassification.from_pretrained('steven123/Check_GoodBad_Teeth')
+  check_teeth_model = ViTForImageClassification.from_pretrained('steven123/Check_GoodBad_Teeth')  
 
-
-  print(get_teeth_res())
+  app.run(debug=True)
