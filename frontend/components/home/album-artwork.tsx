@@ -68,12 +68,9 @@ export function AlbumArtwork({
         <div className="overflow-hidden rounded-md">
           {photoUrl ? (
             <Image
-<<<<<<<< HEAD:frontend/components/album-artwork.tsx
               priority={true}
               loading="eager"
-========
               // loading="eager"
->>>>>>>> 8dc8e0f779cff6d98e70e484fd78a87f1ac9ad4a:frontend/components/home/album-artwork.tsx
               src={
                 photoUrl ||
                 "https://images.unsplash.com/photo-1513745405825-efaf9a49315f?w=300&dpr=2&q=80"

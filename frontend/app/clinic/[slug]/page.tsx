@@ -43,62 +43,6 @@ export default function Clinic({ params }: { params: { slug: string } }) {
 
   return (
     <div className="bg-background mt-14 px-20">
-<<<<<<< HEAD
-      <Flex className=" justify flex flex-row flex-1 gap-[0.25rem] rounded-lg border p-2 ">
-        <Image
-          width={500}
-          height={300}
-          priority={true}
-          className="aspect-[4/3] object-cover"
-          alt=""
-          src={photos[0]}
-        ></Image>
-        <Flex className="flex flex-col gap-[0.25rem]">
-          <Image
-            width={200}
-            height={100}
-            priority={true}
-            alt=""
-            className="flex-1 aspect-[4/3] object-cover"
-            src={photos[1]}
-          ></Image>
-          <Image
-            width={200}
-            height={100}
-            priority={true}
-            alt=""
-            className="flex-1 aspect-[4/3] object-cover"
-            src={photos[2]}
-          ></Image>
-        </Flex>
-        <Flex className="flex flex-col gap-[0.25rem]">
-          <Image
-            width={200}
-            height={100}
-            priority={true}
-            alt=""
-            className="flex-1 aspect-[4/3] object-cover"
-            src={photos[3]}
-          ></Image>
-          <Image
-            width={200}
-            height={100}
-            priority={true}
-            alt=""
-            className="flex-1 aspect-[4/3] object-cover"
-            src={photos[4]}
-          ></Image>
-        </Flex>
-        <Image
-          width={200}
-          height={100}
-          priority={true}
-          alt=""
-          className="flex-1"
-          src={photos[5]}
-        ></Image>
-      </Flex>
-=======
       {!loading && (
         <>
           <PhotoDisplay photos={photos} />
@@ -125,7 +69,6 @@ export default function Clinic({ params }: { params: { slug: string } }) {
           </MiddleOptions>
         </>
       )}
->>>>>>> 8dc8e0f779cff6d98e70e484fd78a87f1ac9ad4a
     </div>
   );
 }
