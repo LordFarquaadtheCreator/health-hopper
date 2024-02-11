@@ -20,6 +20,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Skeleton } from "@radix-ui/themes";
 
+
 export function AlbumArtwork({
   album,
   aspectRatio = "portrait",
@@ -31,20 +32,11 @@ export function AlbumArtwork({
   ...props
 }: any) {
   const [photoUrl, setPhotoUrl] = useState("");
-  const [isImageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
     async function fetchPhoto() {
       if (album.photos && album.photos.length > 0) {
-        const res = await fetch(`/api/photo?place_id=${album.place_id}`);
-        const data = await res.json();
-
-        const random = Math.floor(
-          Math.random() * data.data.result.photos.length
-        );
-
-        const photoReference = data.data.result.photos[random].photo_reference;
-
+        const photoReference = album.photos[0].photo_reference;
         const apiKey = process.env.NEXT_PUBLIC_GOOGLE_API; // Replace with your actual API key
         const photoUrl = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${photoReference}&key=${apiKey}`;
         setPhotoUrl(photoUrl);
@@ -53,10 +45,6 @@ export function AlbumArtwork({
 
     fetchPhoto();
   }, [album.photos]);
-
-  const handleImageLoad = () => {
-    setImageLoaded(true);
-  };
 
   return (
     <Link href={`/clinic/${album.place_id}`}>
@@ -88,24 +76,18 @@ export function AlbumArtwork({
           )}
         </div>
 
-        <div className="space-y-1 text-sm ">
-          <p className="text-xs text-black">{album.rating}/5</p>
-          <h3 className="font-medium pt-[0.25rem] leading-none">
-            {album.name.slice(0, 20)}
-          </h3>
-          {!small && (
-            <p className="text-xs text-balance text-muted-foreground">
-              {album.formatted_address}
-            </p>
-          )}
-          {!small && (
-            <h3 className="font-medium text-lg pt-2 leading-none">
-              Our Score: 8.2/10
-            </h3>
-          )}
-          {/* <p className="text-xs  text-black">Crown Service</p> */}
-        </div>
+      <div className="space-y-1 text-sm ">
+        <p className="text-xs text-black">{album.rating}/5</p>
+        <h3 className="font-medium pt-[0.25rem] leading-none">{album.name}</h3>
+        <p className="text-xs  text-muted-foreground">
+          {album.formatted_address}
+        </p>
+
+        <h3 className="font-medium text-lg pt-2 leading-none">
+          Our Score: 8.2/10
+        </h3>
+        {/* <p className="text-xs  text-black">Crown Service</p> */}
       </div>
-    </Link>
+    </div>
   );
 }
