@@ -22,6 +22,46 @@ const nextConfig = {
         protocol: "https",
         hostname: "maps.googleapis.com",
       },
+      {
+        protocol: "https",
+        hostname: "sc.flymedi.com",
+      },
+      {
+        protocol: "https",
+        hostname: "www.queensmedicalcenter.ae",
+      },
+
+      {
+        protocol: "https",
+        hostname: "mymichigandentist.com",
+      },
+
+      {
+        protocol: "https",
+        hostname: "yalindentalclinic.com",
+      },
+
+      {
+        protocol: "https",
+        hostname: "amedical.az",
+      },
+      
+      {
+        protocol: "https",
+        hostname: "dentx.international",
+      },
+
+      {
+        protocol: "https",
+        hostname: "miro.medium.com",
+      },
+
+      {
+        protocol: "https",
+        hostname: "cdn.i-scmp.com",
+      },
+      
+    
     ],
   },
 };
