@@ -1,0 +1,31 @@
+Review: I love my experience here. The doctor was so nice. There was a sign saying my name when I arrived at the airport. I came from Houston, Texas. They took me to my hotel with their fancy transport. Their coordinator Muhammad was easy to understand and very nice. He told me the entire process and quote. Everything was understood with ease. Yasmin was also very sweet. I'm so glad I chose to come here for a better price than other places. I recommend this place to anyone to get their teeth done. I love my zirconium crowns. I have the smile of my dreams thanks to kotul dental center.
+Sentiment: Sentiment(polarity=0.34948717948717956, subjectivity=0.5983333333333333)
+
+Review: I contacted this dental center while I was on my Antalya trip . I applied to convert 12 of my teeth into zirconium teeth. They responded quickly and made my reservation. All the dentists at the dental center were very professional and helped me with even the smallest care and treatment before doing my teeth. I recommend this professional service to everyone
+Sentiment: Sentiment(polarity=0.07266666666666666, subjectivity=0.186)
+
+Review: Absolutely amazing experience. I cannot put into words how much the people at kotuls helped me. I feel a different person now and would recommend that anyone needing help or embarrassed by their smile contact kotuls it will change your life. My only regret is I should of done this years ago . Thank you to everyone at kotuls .
+Sentiment: Sentiment(polarity=0.22000000000000003, subjectivity=0.56)
+
+Review: They deserve more than 5 stars. Everything was perfect. Highly recommended
+Sentiment: Sentiment(polarity=0.5533333333333333, subjectivity=0.68)
+
+Review: Je recommande vivement la clinique Kotul Dental Center!!!  Ils sont d’un professionnalisme, doux et à l’écoute. J’ai eu droit à un service exceptionnel et un travail bien fait. Leur priorité est la satisfaction du patient.
+L’équipe est sympathique et souriante, on se sent en famille.
+Sentiment: Sentiment(polarity=-0.1953125, subjectivity=0.1)
+
+Review: Kesinlikle 5 yildizdan cok fazlasini hak ediyorlar.implant yaptirmak icin isvecten geldik havalimanindan bizi guleryuzle karsiladilar  transfer hotel  ilgi  mukemmeldi basta doktor sinan bey  ve saime hanim olmak uzere tum guleryuzlu nazik profosyonel calisanlarina cok tesekkur ediyorum islerini  titizlikle profosonelce  yapiyorlar  dis yaptirmak isteyenlere   siddetle tavsiye ediyorum
+Sentiment: Sentiment(polarity=0.0, subjectivity=0.0)
+
+Review: Bravo à l’équipe de Kotul Pour leur amabilité et leur professionnalisme, nous avons été pris en charge du début à la fin de notre séjour. En plus d’avoir pu  réaliser les implants à un prix plus que raisonnable, nous avons eu la chance de pouvoir visiter la magnifique ville d’Antalya. Que demander de plus? J’ai hâte d’y retourner pour la deuxième partie.
+Sentiment: Sentiment(polarity=0.0, subjectivity=0.0)
+
+Review: Hasta ile ilgi, alaka, güleryüz mükemmel. Tedavimin başlangıç ve bitimine kadar hep yanımda oldular. Profesyonel bir ekip ve çalışma. Tavsiye edebileceğim tek klinik. Herşey için teşekkür ederim
+Sentiment: Sentiment(polarity=0.0, subjectivity=0.0)
+
+Review: Tedavi sürecimde ilgi ve alakalarından çok memnun oldum, yaklaşık 1 senedir kontrollerime gidip geliyorum tedavi sonrası süreçte de çok profesyonel ve başarılılardı. Tüm çalışanlarına teşekkür ediyorum
+Sentiment: Sentiment(polarity=0.0, subjectivity=0.0)
+
+Review: Çok güzel ilgilendiler. Emre Bey'e ilgisinden dolayı ve korkularımı yenmemde yardımcı oldukları için çok teşekkür ederim. Gönül rahatlığıyla gidebilirsiniz.
+Sentiment: Sentiment(polarity=0.0, subjectivity=0.0)
+

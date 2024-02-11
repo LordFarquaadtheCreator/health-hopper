@@ -1,0 +1,36 @@
+Review: From the initial contact to the final day the personal touches from the staff was brilliant, always ensuring the patients best interests come before profit. Always ensure you are comfortable and painless throughout. accommodation and transfers all sorted out and the staff (Shirren) was always on hand to answer any question via WhatsApp if required. Work was top class exactly what I was looking for. Again many thanks
+Polarity Scores: {'neg': 0.0, 'neu': 0.648, 'pos': 0.352, 'compound': 0.9818}
+
+Review: Had zirconium crowns done at this clinic, and I’m absolutely in love! I would like to thank doctor Funda for her amazing job’ and I wanted to thank the team for making it an easy journey, best hotel was given and super helpful! Thank you all for your amazing hospitality and work! Can’t wait to be back for visit and see you guys again! Love guys lots! X Sarah ♥️
+Polarity Scores: {'neg': 0.0, 'neu': 0.561, 'pos': 0.439, 'compound': 0.993}
+
+Review: Very grateful with our new smile, thanks to the team Let’s Smile TURKIYE Antalya, every moment we were in their country they made us feel that we were part of their family. The communication is Excellent before and after the procedure.  we recommend Lets Smile TURKIYE   .
+Polarity Scores: {'neg': 0.0, 'neu': 0.668, 'pos': 0.332, 'compound': 0.9577}
+
+Review: Best clinic ever! Lovely and professional team with high end expertise. So much recommended!!!!
+Polarity Scores: {'neg': 0.0, 'neu': 0.494, 'pos': 0.506, 'compound': 0.9051}
+
+Review: thanks for all on 4 implant treatment and helpful staff, best dental center in Antalya
+Polarity Scores: {'neg': 0.0, 'neu': 0.548, 'pos': 0.452, 'compound': 0.872}
+
+Review: Best Dental Clinic in Antalya Turkey
+Polarity Scores: {'neg': 0.0, 'neu': 0.543, 'pos': 0.457, 'compound': 0.6369}
+
+Review: Gelirken aklımızda soru işaretleri vardı ama çok iyi hizmet aldık herkese tavsiye ediyorum .
+
+We had question marks when we came, but we received a very good service, I recommend it to everyone.
+
+Let's go letsmile .
+Polarity Scores: {'neg': 0.0, 'neu': 0.823, 'pos': 0.177, 'compound': 0.8196}
+
+Review: Tartışmaya veya araştırmaya gerek yok güvenle gidebileceğiniz bir yer
+
+The price paid with the service received is very good. and it deserves to be the best clinic in the area
+Polarity Scores: {'neg': 0.0, 'neu': 0.791, 'pos': 0.209, 'compound': 0.8122}
+
+Review: 
+Polarity Scores: {'neg': 0.0, 'neu': 0.0, 'pos': 0.0, 'compound': 0.0}
+
+Review: 
+Polarity Scores: {'neg': 0.0, 'neu': 0.0, 'pos': 0.0, 'compound': 0.0}
+

@@ -1,0 +1,33 @@
+Review: I have had a nice experience with Queen Dental in Antalya. The team was welcoming,  professional and dedicated. Transportation was seamless to and from the clinic. Dentists, reception, and driver were polite.  The implant was done as described even though my gum didn’t make the task easier. I might go back again for a review session when time permits. If you want to get a good dental work at an affordable price, I recommend this place.
+Special thanks to Ismat, Ali, Burhan, Tugce and Merve.
+Tesekkur ederim.
+Hamza.
+Polarity Scores: {'neg': 0.0, 'neu': 0.768, 'pos': 0.232, 'compound': 0.9674}
+
+Review: Very friendly staff, dentist very professional and takes their time and no rush you at all. They have reasonable fixed prices and do brilliant job. Highly recommended. Happy customer and I should visit again. Thank you
+Polarity Scores: {'neg': 0.046, 'neu': 0.624, 'pos': 0.33, 'compound': 0.9282}
+
+Review: It's a clinic where the most successful dentist of Antalya work. From the moment i set foot at Antalya airport, I felt the professionalism. The hotel is tremendous. I felt very safe. Thank you to the whole team.
+Polarity Scores: {'neg': 0.0, 'neu': 0.777, 'pos': 0.223, 'compound': 0.8769}
+
+Review: Very accommodating and welcoming. They have an an amazing expert surgeon and dentists. Drivers and translators are very friendly. Great clinic, very clean. I absolutely recommend this dental clinic.. keep up the good work guys! Kudos to you all
+Polarity Scores: {'neg': 0.0, 'neu': 0.533, 'pos': 0.467, 'compound': 0.9801}
+
+Review: Hello, I would like to tell you about my experience, first of all I was impressed with the service, from the moment I set foot in the airport to the last procedure, I was met at the airport by a wonderful staff who escorted me to the clinic, a polite responsible person with excellent driving skills, I was amazed by his professionalism.  As for the procedures, I received excellent quality service at an ideal price. I knew exactly what I wanted and I introduced it to the staff. I got exactly the result I expected. thank everything
+Polarity Scores: {'neg': 0.0, 'neu': 0.758, 'pos': 0.242, 'compound': 0.9801}
+
+Review: This is the most amazing dental clinic I have ever been to. The staff are warm and friendly as well as professional! They make you want to come to your dentist!!
+Polarity Scores: {'neg': 0.0, 'neu': 0.659, 'pos': 0.341, 'compound': 0.9094}
+
+Review: I had problems with my teeth, I changed crowns several times, they were crooked and ugly. My friend advised me Dental Centre Turkey Queen in Antalya Turkey. I was very pleased. The dentists are professionals, excellent staff. And the free hotel was a bonus!
+Polarity Scores: {'neg': 0.1, 'neu': 0.615, 'pos': 0.286, 'compound': 0.9039}
+
+Review: Hi I have to say they are all exceptionally amazing all the staff. From the driver to the receptionist to the dental nurses and the cosmetic dentist are perfectionists. My teeth are amazing. They do everything from picking you up from the airport. Taking you to a hotel which they paid for. Pick you up for every appointment then take you back to your hotel. After they finish their amazing dental work they take you back to the airport. All I can say they are the queens of dentistry. If you need any dental work don’t hesitate dental centre turkey queen for me are the best. And the best thing I left till last the price is soo much cheaper than in uk you will be amazed by the price this I guarantee you. Anyway thank you so much to everyone at dental queen   Oh just one more thing their new clinic is so ultra clean so stylist it’s a pleasure to walk into
+Polarity Scores: {'neg': 0.011, 'neu': 0.801, 'pos': 0.188, 'compound': 0.9867}
+
+Review: An amazing experience.  Very friendly staff.  Excellent service from the day we contacted them to being met at the airport and at the clinic.  The sentence exceeded our expectations.  I recommend
+Polarity Scores: {'neg': 0.0, 'neu': 0.633, 'pos': 0.367, 'compound': 0.9332}
+
+Review: I cannot contact the clinic. no one answers phone calls, SMS, messengers and e-mails
+Polarity Scores: {'neg': 0.145, 'neu': 0.855, 'pos': 0.0, 'compound': -0.296}
+

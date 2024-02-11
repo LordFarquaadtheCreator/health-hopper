@@ -1,0 +1,41 @@
+Review: Absolutely brilliant I feel like a complete different person . The teeth have made me more confidence then ever. Can’t thank the dental design enough . Experience was absolutely fabulous will definitely recommend.
+
+Thank you.
+Sentiment: Sentiment(polarity=0.2714285714285714, subjectivity=0.6428571428571429)
+
+Review: By far the best place.
+I have stayed in the same hotel with other pacients from other clinics . Dental design is by far above all of them.
+Life changing . The staff is amazing and the quality of the products they use and the service they provide is just brilliant.
+Thanks for making my life great again ❤️
+Sentiment: Sentiment(polarity=0.31363636363636366, subjectivity=0.5568181818181818)
+
+Review: Truly brilliant experience from start to finish. Was very nervous at first as first time travelling abroad to get my teeth fixed but best decision I made. The practice itself was impeccably tidy and had high tech equipment. The dentist was very knowledgeable and experienced. The staff were 10/10. So happy I chose Dental Design Turkey. Will definitely returning for more work. Thank you so much.
+Sentiment: Sentiment(polarity=0.42571428571428577, subjectivity=0.5147619047619048)
+
+Review: From my initial point of contact last year the service I have received from Dental Design has been unbelievable, all questions via WhatsApp before landing were answered within the hour and I was kindly met at the airport by the friendly driver. The building is extremely clean and every person you meet is kind and friendly. I was treated by Fadime who is absolutely amazing at what she does. She made sure I was always comfortable and pain-free..  constantly reassuring me and making me feel good. The aftercare has been great and I'm so glad I went with Dental Design. I can't recommend them enough and will return for further work in future. Thank you again you have changed my life and I will be forever thankful
+Sentiment: Sentiment(polarity=0.30925925925925923, subjectivity=0.609104938271605)
+
+Review: I got my 20 crowns a month ago now and I could not be happier with my decision to choose the team at Dental Design Turkey to do the work. From the moment I walked in the whole staff was professional, understanding, kind, and friendly. I had complete confidence in Doctor Hamide and Doctor Fadime. They explained everything, answered all of my questions, and they were completely aboveboard about everything, and trustworthy. I cannot recommend Dental Design highly enough! 5 stars for everything! Thank you all so much!
+Sentiment: Sentiment(polarity=0.215625, subjectivity=0.425)
+
+Review: Wow, what an amazing experience, they have the best doctors and dentist at design turkey! I can not recommend them enough! I have had zero pain, genuinely the best experience in a dentist Iv ever had! Thank you so much to the full team ❤️
+Sentiment: Sentiment(polarity=0.45625000000000004, subjectivity=0.53125)
+
+Review: I was very scared to do this step but this place has made me so happy and confident the team here treat you so good and very kind they made me feel I’m in very good hands. I want to thank everyone for this amazing work I did a full crowns for my teeth now I can smile more confident. I really advice everyone to come here.❤️
+Sentiment: Sentiment(polarity=0.5283333333333333, subjectivity=0.6330555555555556)
+
+Review: I couldn’t recommend Dental Design enough, they have truly transformed my teeth, the treatment and care has been the best, they are so welcoming and made me feel at ease, I would definitely recommend them to anyone who wants to transform there smile :)
+Sentiment: Sentiment(polarity=0.3333333333333333, subjectivity=0.4166666666666667)
+
+Review: I came to make my teeth done here and they look absolutely amazing. They look super natural very amazing job. Now I know I can smile with more confidence. All thanks to my doctor and the nice staff
+Sentiment: Sentiment(polarity=0.4266666666666667, subjectivity=0.5958333333333334)
+
+Review: I recently had the pleasure of getting veneers done, and let me tell you, the results are beyond amazing!     
+
+From the moment I stepped into the dental design, I was greeted with the warmest smiles and exceptional service. The staff made me feel so comfortable and at ease throughout the entire process. Their professionalism and attention to detail truly impressed me.   
+
+Now, let's talk about the end result - WOW! My veneers have completely transformed my smile, and I couldn't be happier!
+
+Thank you once again to the incredible team for their outstanding service and for giving me a smile that I'm proud to show off!
+Sentiment: Sentiment(polarity=0.47051282051282056, subjectivity=0.6884615384615385)
+
