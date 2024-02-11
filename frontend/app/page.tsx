@@ -52,7 +52,6 @@ export default function MusicPage() {
         />
       </div>
       <div className="hidden md:block">
-        <Header />
         {/* make this a layout */}
         {/* <div className="border-t"> */}
         <Flex className="bg-background mt-14 px-20">
