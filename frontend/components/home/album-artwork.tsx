@@ -32,6 +32,7 @@ export function AlbumArtwork({
 }: any) {
   const [photoUrl, setPhotoUrl] = useState("");
   const [isImageLoaded, setImageLoaded] = useState(false);
+  const [score, setScore] = useState(0);
 
   useEffect(() => {
     async function fetchPhoto() {
@@ -55,6 +56,13 @@ export function AlbumArtwork({
       }
     }
 
+    const fetchReviews = async () => {
+      const res = await fetch(`/api/reviews?place_id=${album.place_id}`);
+      const data = await res.json();
+      setScore(data.data);
+    };
+
+    fetchReviews();
     fetchPhoto();
   }, [album.photos]);
 
@@ -104,7 +112,7 @@ export function AlbumArtwork({
           )}
           {!small && (
             <h3 className="font-medium text-lg pt-2 leading-none">
-              Our Score: 8.2/10
+              Our Score: {(Math.round(score * 100) / 100) * 2}/10
             </h3>
           )}
           {/* <p className="text-xs  text-black">Crown Service</p> */}
