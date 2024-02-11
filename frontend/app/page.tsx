@@ -28,7 +28,6 @@ export default function MusicPage() {
               <Button className="flex items-center gap-2">Search</Button>
             </Flex>
           </Flex>
-
           <div className="col-span-3 lg:col-span-4 ">
             <div className="h-full py-6 ">
               <Tabs defaultValue="music" className="h-full space-y-6">
