@@ -107,7 +107,7 @@ export function DentalTab() {
                       height={150}
                       className="w-[150px] min-w-[150px] h-[150px] min-h-[150px] aspect-square object-cover rounded-md" />
                     <Image
-                      src=" https://dentx.international/wp-content/uploads/2024/01/George-Clooney-teeth-before-and-after.webp"
+                      src="https://dentx.international/wp-content/uploads/2024/01/George-Clooney-teeth-before-and-after.webp"
                       alt=""
                       width={150}
                       height={150}
