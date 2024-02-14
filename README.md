@@ -25,3 +25,7 @@ A `next.js` application with a python backend server in `flask`
     - `GOOGLE_API_KEY` - for additional places API scraping
     - `OPENAI_KEY` - for additional text embedding
     - `SERP_API_KEY` - for getting google image results, etc.
+
+# How To Contribute
+- through a student-lead intiative, we plan to ship this as a startup product in the near future
+- if you would like to contribute, please submit a pull request to any of the issues currently open - or create new issues yourself
