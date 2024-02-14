@@ -58,7 +58,7 @@ export function DentalTab() {
         </ScrollArea>
       </div>
       <div className="mt-6 space-y-1">
-        <h2 className="text-2xl font-semibold tracking-tight">They Wanted to Get a Holywood Smile</h2>
+        <h2 className="text-2xl font-semibold tracking-tight">They Wanted to Get a Hollywood Smile</h2>
         <p className="text-sm text-muted-foreground">
           Because everyone, deserves a great smile.
         </p>
