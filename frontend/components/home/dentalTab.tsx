@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 import { Skeleton } from "../ui/skeleton";
 import Image from "next/image";
 
-export function DentalTab() {
+function DentalTab() {
   const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -143,3 +143,5 @@ export function DentalTab() {
     </>
   );
 }
+
+export { DentalTab }

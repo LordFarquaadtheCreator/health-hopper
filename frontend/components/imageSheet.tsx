@@ -15,7 +15,7 @@ import {
 import { CameraIcon, ImageIcon } from "@radix-ui/react-icons";
 import { useRef, useState } from "react";
 
-export function SheetDemo() {
+function SheetDemo() {
   const [photo, setPhoto] = useState<any>([]);
   const fileInputRef: any = useRef(null);
 
@@ -62,3 +62,5 @@ export function SheetDemo() {
     // </Sheet>
   );
 }
+
+export { SheetDemo }

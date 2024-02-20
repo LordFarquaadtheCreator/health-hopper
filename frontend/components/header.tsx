@@ -12,7 +12,7 @@ import Image from "next/image";
 import { SheetDemo } from "./imageSheet";
 import { Sheet, SheetTrigger } from "./ui/sheet";
 
-export default function Header() {
+function Header() {
   return (
     <div className="flex p-4 flex-row items-center justify-between px-10 border-b">
       <Link href="/" className="flex flex-row items-center gap-[4px] ">
@@ -41,3 +41,5 @@ export default function Header() {
     </div>
   );
 }
+
+export { header }

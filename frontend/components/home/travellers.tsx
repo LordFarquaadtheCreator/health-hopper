@@ -16,7 +16,7 @@ import {
 } from "@radix-ui/react-icons";
 import React from "react";
 
-export function PopoverDemo() {
+function PopoverDemo() {
   const [open, setOpen] = React.useState(false);
   const [travellers, setTravellers] = React.useState(1);
 
@@ -115,3 +115,5 @@ export function PopoverDemo() {
     </Popover>
   );
 }
+
+export { PopoverDemo }

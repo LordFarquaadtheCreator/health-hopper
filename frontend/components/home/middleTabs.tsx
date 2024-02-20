@@ -2,7 +2,7 @@
 import { Tabs, TabsList, TabsTrigger } from "@radix-ui/react-tabs";
 import { Flex } from "@radix-ui/themes";
 
-export function MiddleTabs() {
+function MiddleTabs() {
   return (
     <Flex className="p-4 border-[1px] border-gray-300  rounded-b-none border-b-0 rounded-lg flex justify-center">
       <Tabs className="bg-none" defaultValue="Dental">
@@ -42,3 +42,5 @@ export function MiddleTabs() {
     </Flex>
   );
 }
+
+export { MiddleTabs }

@@ -11,7 +11,8 @@ import { StarFilledIcon, StarIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { IconRight } from "react-day-picker";
 import { Button } from "@/components/ui/button";
-export default function Clinic({ params }: { params: { slug: string } }) {
+
+function Clinic({ params }: { params: { slug: string } }) {
   const [photos, setPhotos] = useState<any>([]);
   const [clinic, setClinic] = useState<any>({});
   const [score, setScore] = useState(0);
@@ -109,4 +110,8 @@ export default function Clinic({ params }: { params: { slug: string } }) {
       )}
     </div>
   );
+}
+
+export {
+  Clinic
 }

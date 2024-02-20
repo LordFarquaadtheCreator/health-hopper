@@ -7,7 +7,7 @@ import {
   ResizablePanelGroup,
 } from "@/components/ui/resizable";
 import Image from "next/image";
-export default function Clinic({ params }: { params: { slug: string } }) {
+function Clinic({ params }: { params: { slug: string } }) {
   const [photos, setPhotos] = useState<any>([]);
   useEffect(() => {
     const fetchPhotos = async () => {
@@ -90,4 +90,8 @@ export default function Clinic({ params }: { params: { slug: string } }) {
       </Flex>
     </div>
   );
+}
+
+export {
+  Clinic  //duplicate function names, can be confusing for scalabillity purposes, suggest changing up the names of the functions you are working with
 }

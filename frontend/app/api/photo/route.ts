@@ -1,6 +1,6 @@
 import { NextRequest } from "next/server";
 
-export async function GET(request: NextRequest) {
+async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
   const place_id = searchParams.get("place_id");
 
@@ -14,3 +14,5 @@ export async function GET(request: NextRequest) {
 
   return Response.json({ data });
 }
+
+export { GET }  //again: having duplicate function name  should be something that can be changed for easier readaibillity/comprehension

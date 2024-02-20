@@ -20,7 +20,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Skeleton } from "@radix-ui/themes";
 
-export function AlbumArtwork({
+function AlbumArtwork({
   album,
   aspectRatio = "portrait",
   width,
@@ -122,3 +122,5 @@ export function AlbumArtwork({
     </Link>
   );
 }
+
+export { AlbumArtwork }

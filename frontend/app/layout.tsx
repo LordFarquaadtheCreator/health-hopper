@@ -6,12 +6,11 @@ import Header from "@/components/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "Expoodia",
   description: "Streamline medical tourism",
 };
-
-export default function RootLayout({
+function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -31,4 +30,9 @@ export default function RootLayout({
       </body>
     </html>
   );
+}
+
+export {
+  metadata, 
+  RootLayout
 }

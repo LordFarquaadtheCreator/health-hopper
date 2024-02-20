@@ -9,12 +9,12 @@ import { PopoverDemo } from "@/components/home/travellers";
 import { MiddleTabs } from "@/components/home/middleTabs";
 import { DentalTab } from "@/components/home/dentalTab";
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "HealthHopper",
   description: "Simplify medical tourism.",
 };
 
-export default function MusicPage() {
+function MusicPage() {
   return (
     <>
       <div className="">
@@ -44,4 +44,9 @@ export default function MusicPage() {
       </div>
     </>
   );
+}
+
+export {
+  metadata,
+  MusicPage  //originally default, import as a component with curly braces 
 }

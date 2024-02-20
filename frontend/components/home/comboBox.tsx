@@ -41,7 +41,7 @@ const frameworks = [
   },
 ];
 
-export function ComboboxDemo() {
+function ComboboxDemo() {
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState("");
 
@@ -91,3 +91,5 @@ export function ComboboxDemo() {
     </Popover>
   );
 }
+
+export { ComboboxDemo }
