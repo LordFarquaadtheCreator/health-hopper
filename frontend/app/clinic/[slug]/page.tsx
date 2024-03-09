@@ -7,7 +7,15 @@ import Image from "next/image";
 import { PhotoDisplay } from "@/components/clinic/photoDisplay";
 import { MiddleTabs } from "@/components/home/middleTabs";
 import { MiddleOptions } from "@/components/clinic/middleOptions";
-import { StarFilledIcon, StarIcon } from "@radix-ui/react-icons";
+import {
+  CookieIcon,
+  HeartFilledIcon,
+  HeartIcon,
+  PaperPlaneIcon,
+  PersonIcon,
+  StarFilledIcon,
+  StarIcon,
+} from "@radix-ui/react-icons";
 import Link from "next/link";
 import { IconRight } from "react-day-picker";
 import { Button } from "@/components/ui/button";
@@ -59,7 +67,7 @@ export default function Clinic({ params }: { params: { slug: string } }) {
         <>
           <PhotoDisplay photos={photos} />
           <MiddleOptions>
-            <Flex className="flex flex-col pt-8">
+            <Flex className="flex flex-col pt-8 pb-20">
               {/* <p className="text-xs text-black">{clinic.rating}/5</p> */}
               <Badge className="w-24 mb-2 font-light">VIP Access</Badge>
               <h3 className="font-medium text-3xl leading-none">
@@ -103,6 +111,61 @@ export default function Clinic({ params }: { params: { slug: string } }) {
                 </Flex>
               </Link>
               <h3 className="mt-8">Popular Amenities</h3>
+              <Flex className="mt-2 flex w-[300px] justify-between  flex-wrap gap-6">
+                <Flex className="flex-row flex gap-[0.25rem]">
+                  <CookieIcon />
+                  <p className="text-xs text-[0.70rem]">Food Included</p>
+                </Flex>
+                <Flex className="flex-row flex gap-[0.25rem]">
+                  <PaperPlaneIcon />
+                  <p className="text-xs text-[0.70rem]">Travel Bound</p>
+                </Flex>
+                <Flex className="flex-row flex gap-[0.25rem]">
+                  <HeartIcon />
+                  <p className="text-xs text-[0.70rem]">Recovery Location</p>
+                </Flex>
+                <Flex className="flex-row flex gap-[0.25rem]">
+                  <PersonIcon />
+                  <p className="text-xs text-[0.70rem]">Free Checkup</p>
+                </Flex>
+              </Flex>
+              <Link
+                className="mt-[0.8rem]"
+                type="outline"
+                href={`/clinic/${clinic.place_id}`}
+              >
+                <Flex className="flex flex-row items-center gap-[0.25rem] hover:border-b w-32 hover:border-blue-500   text-blue-500">
+                  <p className="text-xs font-light">See all amenities</p>
+                  <IconRight className="w-2 h-2" />
+                </Flex>
+              </Link>
+              <h3 className="mt-8">Surgery Costs</h3>
+              <Flex className="mt-2 flex w-[300px] justify-between  flex-wrap gap-6">
+                <Flex className="flex-row flex gap-[0.25rem]">
+                  <p className="text-xs text-[0.70rem]">$0 - Consultation</p>
+                </Flex>
+                <Flex className="flex-row flex gap-[0.25rem]">
+                  <p className="text-xs text-[0.70rem]">$215 - E-max</p>
+                </Flex>
+                <Flex className="flex-row flex gap-[0.25rem]">
+                  <p className="text-xs text-[0.70rem]">
+                    $425 - Dental Implant
+                  </p>
+                </Flex>
+                <Flex className="flex-row flex gap-[0.25rem]">
+                  <p className="text-xs text-[0.70rem]">$170 - Crown</p>
+                </Flex>
+              </Flex>
+              <Link
+                className="mt-[0.8rem]"
+                type="outline"
+                href={`/clinic/${clinic.place_id}`}
+              >
+                <Flex className="flex flex-row items-center gap-[0.25rem] hover:border-b w-32 hover:border-blue-500   text-blue-500">
+                  <p className="text-xs font-light">See all prices</p>
+                  <IconRight className="w-2 h-2" />
+                </Flex>
+              </Link>
             </Flex>
           </MiddleOptions>
         </>

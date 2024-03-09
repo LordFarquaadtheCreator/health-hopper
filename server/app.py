@@ -16,14 +16,21 @@ app = Flask(__name__)
 def hello():
   return "Hello World!"
 
-@app.route("/get_teeth_results")
+@app.route("/get_teeth_results", methods=['POST'])
 def get_teeth_res() -> list :
+  if 'image' not in request.files:
+        return jsonify({'error': 'No image part'}), 400
+
+  
   # path_to_image = request.args.get('path_to_image')
   # response = requests.get(path_to_image)
   # image = response.content
   image = request.files['image']
-  img = Image.open(BytesIO(image))
-
+  print(image)
+  img = Image.open(BytesIO(image.read()))
+  # Convert to RGB if necessary
+  if img.mode != 'RGB':
+      img = img.convert('RGB')
   inputs = feature_extractor(images=img, return_tensors="pt")
   outputs = [check_aligned_model(**inputs).logits.softmax(dim=-1).argmax(-1).item(), check_gum_model(**inputs).logits.softmax(dim=-1).argmax(-1).item(), check_teeth_model(**inputs).logits.softmax(dim=-1).argmax(-1).item()]
 
