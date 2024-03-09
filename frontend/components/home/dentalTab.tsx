@@ -62,7 +62,7 @@ export function DentalTab() {
       </div>
       <div className="mt-6 space-y-1">
         <h2 className="text-2xl font-semibold tracking-tight">
-          They Wanted to Get a Holywood Smile
+          They Wanted to Get a Hollywood Smile
         </h2>
         <p className="text-sm text-muted-foreground">
           Because everyone, deserves a great smile.
@@ -120,7 +120,7 @@ export function DentalTab() {
                   className="w-[150px] min-w-[150px] h-[150px] min-h-[150px] aspect-square object-cover rounded-md"
                 />
                 <Image
-                  src=" https://dentx.international/wp-content/uploads/2024/01/George-Clooney-teeth-before-and-after.webp"
+                  src="https://dentx.international/wp-content/uploads/2024/01/George-Clooney-teeth-before-and-after.webp"
                   alt=""
                   width={150}
                   height={150}

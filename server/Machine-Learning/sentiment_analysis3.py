@@ -55,13 +55,12 @@ text_output_dir = 'Text_Files'
 os.makedirs(text_output_dir, exist_ok=True)
 
 # Load JSON data from file
-json_file_path = 'C:\\Users\\dasa7\\OneDrive\\Desktop\\VS_Android_Projects\\health-hopper\\server\\data-scraping\\data-with-reviews.json'  # Adjust the path as needed
+json_file_path = '../data-scraping/data-with-reviews.json'  # Adjust the path as needed
 with open(json_file_path, 'r', encoding='utf-8') as f:
     json_data = json.load(f)
 
 # Analyze sentiment and save text outputs
 analyze_sentiment_textblob(json_data, text_output_dir)
-
 
 
 
