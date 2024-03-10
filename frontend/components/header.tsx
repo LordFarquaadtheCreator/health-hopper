@@ -14,7 +14,7 @@ import { Sheet, SheetTrigger } from "./ui/sheet";
 
 export default function Header() {
   return (
-    <div className="flex p-4 flex-row items-center justify-between [paddingLeft:_clamp(0.5rem,7vw,10rem)] [paddingRight:_clamp(0.5rem,7vw,10rem)] border-b">
+    <div className="flex p-4 flex-row items-center justify-between [paddingLeft:_clamp(1rem,2vw,5rem)] [paddingRight:_clamp(1rem,2vw,5rem)]  lg:[paddingLeft:_clamp(0.25rem,10vw,10rem)] lg:[paddingRight:_clamp(0.25rem,10vw,10rem)] border-b">
       <Link href="/" className="flex flex-row items-center gap-[4px] ">
         <h1 className="font-light tracking-tighter  subpixel-antialiased     text-2xl">
           HealthHopper
