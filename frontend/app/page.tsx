@@ -18,7 +18,7 @@ export default function MusicPage() {
   return (
     <>
       <div className="">
-        <Flex className="bg-background mt-14 ">
+        <Flex className="bg-background mt-14 [paddingLeft:_clamp(1rem,2vw,5rem)] [paddingRight:_clamp(1rem,2vw,5rem)]  lg:[paddingLeft:_clamp(0.25rem,10vw,10rem)] lg:[paddingRight:_clamp(0.25rem,10vw,10rem)]">
           <Flex>
             <MiddleTabs />
             <Flex className="flex flex-row pb-10 p-6 gap-4 border-gray-300 rounded-t-none border-[1px] rounded-lg ">
