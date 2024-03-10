@@ -11,15 +11,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { SheetDemo } from "./imageSheet";
 import { Sheet, SheetTrigger } from "./ui/sheet";
+import { Logo } from "./logo";
 
 export default function Header() {
   return (
     <div className=" border-b ">
       <div className="flex py-4 flex-row items-center justify-between ml-[auto] mr-[auto] px-6 [maxWidth:_clamp(1200px,70vw,1400px)]">
         <Link href="/" className="flex flex-row items-center gap-[4px] ">
-          <h1 className="font-light tracking-tighter  subpixel-antialiased     text-2xl">
-            HealthHopper
-          </h1>
+          <Logo width="150" height="150" />
         </Link>
 
         <div className="flex flex-row items-center gap-2">
