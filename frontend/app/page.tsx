@@ -15,11 +15,33 @@ export const metadata: Metadata = {
 };
 
 export default function MusicPage() {
+  const tabs = [
+    {
+      title: "Dental",
+      value: "dental",
+    },
+    {
+      title: "Surgery",
+      value: "surgery",
+    },
+    {
+      title: "Cancer",
+      value: "cancer",
+    },
+    {
+      title: "Orthopedic",
+      value: "orthopedic",
+    },
+    {
+      title: "Transplant",
+      value: "transplant",
+    },
+  ];
   return (
     <Flex className="bg-background mt-14 ">
       <Flex>
-        <MiddleTabs />
-        <Flex className="flex flex-col sm:flex-row pb-10 p-6 gap-4 border-gray-300 rounded-t-none border-[1px] rounded-lg ">
+        <MiddleTabs propTabs={tabs} />
+        <Flex className="flex flex-col sm:flex-row pb-14 p-6 gap-4 border-gray-300 rounded-t-none border-[1px] rounded-3xl ">
           <ComboboxDemo />
           <CalendarDateRangePicker />
           <PopoverDemo />
@@ -28,8 +50,11 @@ export default function MusicPage() {
       </Flex>
       <div className="col-span-3 lg:col-span-4 ">
         <div className="h-full py-6 ">
-          <Tabs defaultValue="music" className="h-full space-y-6">
-            <TabsContent value="music" className="border-none p-0 outline-none">
+          <Tabs defaultValue="dental" className="h-full space-y-6">
+            <TabsContent
+              value="dental"
+              className="border-none p-0 outline-none"
+            >
               <DentalTab />
             </TabsContent>
           </Tabs>
