@@ -4,9 +4,9 @@ import { Flex } from "@radix-ui/themes";
 
 export function MiddleTabs() {
   return (
-    <Flex className="p-4 border-[1px] border-gray-300  rounded-b-none border-b-0 rounded-lg flex justify-center">
+    <Flex className="p-4 border-[1px] border-gray-300   rounded-b-none border-b-0 rounded-lg flex justify-center">
       <Tabs className="bg-none" defaultValue="Dental">
-        <TabsList className="shrink-0 bg-transparent flex flex-row gap-4">
+        <TabsList className="bg-transparent flex-wrap flex flex-row gap-4 font-medium text-sm">
           <TabsTrigger
             className="data-[state=active]:text-black data-[state=active]:dark:text-white rounded-none   data-[state=active]:focus:relative data-[state=active]:shadow-[0_0_0_0px] data-[state=active]:border-b border-black dark:border-white  outline-none cursor-pointer"
             value="Dental"
@@ -31,12 +31,12 @@ export function MiddleTabs() {
           >
             Orthopedics
           </TabsTrigger>
-          <TabsTrigger
+          {/* <TabsTrigger
             className="data-[state=active]:text-black data-[state=active]:dark:text-white rounded-none   data-[state=active]:focus:relative data-[state=active]:shadow-[0_0_0_0px] data-[state=active]:border-b border-black dark:border-white  outline-none cursor-pointer"
             value="Transplant"
           >
             Transplant
-          </TabsTrigger>
+          </TabsTrigger> */}
         </TabsList>
       </Tabs>
     </Flex>

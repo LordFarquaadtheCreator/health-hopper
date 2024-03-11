@@ -19,7 +19,7 @@ export default function MusicPage() {
     <Flex className="bg-background mt-14 ">
       <Flex>
         <MiddleTabs />
-        <Flex className="flex flex-row pb-10 p-6 gap-4 border-gray-300 rounded-t-none border-[1px] rounded-lg ">
+        <Flex className="flex flex-col sm:flex-row pb-10 p-6 gap-4 border-gray-300 rounded-t-none border-[1px] rounded-lg ">
           <ComboboxDemo />
           <CalendarDateRangePicker />
           <PopoverDemo />
