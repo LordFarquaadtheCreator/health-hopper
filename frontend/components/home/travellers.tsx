@@ -14,7 +14,9 @@ import {
   PlusIcon,
   SewingPinFilledIcon,
 } from "@radix-ui/react-icons";
+import { IoPersonSharp } from "react-icons/io5";
 import React from "react";
+import { Flex, Text } from "@radix-ui/themes";
 
 export function PopoverDemo() {
   const [open, setOpen] = React.useState(false);
@@ -32,14 +34,19 @@ export function PopoverDemo() {
           role="combobox"
           aria-expanded={open}
           className={cn(
-            "flex-1 justify-start text-left font-normal border-[#7B7B7B]"
+            "flex-1 justify-start text-left font-normal py-6 bg-white border-[#7B7B7B] "
           )}
         >
-          <PersonIcon className="-ml-2 mr-[0.25rem] h-4 w-4 shrink-0 " />
-          Travellers, {travellers}
+          <IoPersonSharp className="-ml-2 mr-[0.35rem] h-6 w-6 shrink-0 " />
+          <Flex className="flex flex-col">
+            <Text className="font-light text-[0.6rem] -mt-2">Travellers</Text>
+            <Text className="font-light">
+              {travellers} {travellers == 1 ? "traveller" : "travellers"}{" "}
+            </Text>
+          </Flex>
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="">
+      <PopoverContent>
         <div className="grid gap-4">
           <div className="space-y-2">
             <h4 className="font-medium leading-none">Travellers</h4>

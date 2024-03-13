@@ -18,23 +18,19 @@ import { Sheet, SheetTrigger } from "../ui/sheet";
 export const Navbar = ({ navItems, className }: any) => {
   const { scrollYProgress } = useScroll();
 
-  const [visible, setVisible] = useState(false);
-  const [top, setTop] = useState(true);
+  const [visible, setVisible] = useState(true);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
       let direction = current! - scrollYProgress.getPrevious()!;
 
-      if (scrollYProgress.get() < 0.16) {
+      if (scrollYProgress.get() > 0.15) {
         setVisible(false);
-        setTop(true);
+      }
+      if (direction < 0) {
+        setVisible(true);
       } else {
-        setTop(false);
-        if (direction < 0) {
-          setVisible(true);
-        } else {
-          setVisible(false);
-        }
+        setVisible(false);
       }
       console.log("dir", direction);
       console.log("current", current);
@@ -44,31 +40,6 @@ export const Navbar = ({ navItems, className }: any) => {
 
   return (
     <AnimatePresence mode="wait">
-      <motion.div className=" border-b shadow-sm">
-        <div className="flex py-4 z-[5000] sticky flex-row items-center justify-between ml-[auto] mr-[auto] px-6 [maxWidth:_clamp(1200px,70vw,1400px)]">
-          <Link href="/" className="flex flex-row items-center gap-[4px] ">
-            <Logo width="150" height="150" />
-          </Link>
-
-          <div className="flex flex-row items-center gap-2">
-            <Sheet>
-              <SheetTrigger asChild>
-                <Button variant="outline">
-                  <UploadIcon />
-                </Button>
-              </SheetTrigger>
-              <SheetDemo />
-            </Sheet>
-            <Button variant="outline">
-              <BellIcon className="w-4 h-4" />
-            </Button>
-            <ThemeChange />
-            <Button variant={"outline"} className="tracking-tight  font-medium">
-              <Link href={"/auth/login"}>Sign in</Link>
-            </Button>
-          </div>
-        </div>
-      </motion.div>
       <motion.div
         initial={{
           opacity: 1,

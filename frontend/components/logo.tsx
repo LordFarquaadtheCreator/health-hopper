@@ -2,7 +2,7 @@ import React from "react";
 
 export const Logo = ({ width = "585", height = "425", ...props }) => (
   <svg
-    className="transition ease-in-out dark:fill-white  hover:scale-105 duration-300"
+    className="transition ease-in-out -ml-6 dark:fill-white  hover:scale-105 duration-300"
     width={100}
     height={40}
     viewBox={`200 20 250 250`}

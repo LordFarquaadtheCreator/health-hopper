@@ -6,7 +6,7 @@ import {
   CheckIcon,
   SewingPinFilledIcon,
 } from "@radix-ui/react-icons";
-
+import { IoLocationSharp } from "react-icons/io5";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
@@ -21,6 +21,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import { Flex, Text } from "@radix-ui/themes";
 
 const frameworks = [
   {
@@ -52,20 +53,28 @@ export function ComboboxDemo() {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className={cn(
-            "flex-1 justify-start text-left font-normal border-[#7B7B7B]"
-          )}
+          className={"flex-1 justify-start text-left py-6 border-[#7B7B7B] "}
         >
-          <SewingPinFilledIcon className="-ml-2 mr-[0.25rem] h-4 w-4 shrink-0 " />
-          {value
-            ? frameworks.find((framework) => framework.value === value)?.label
-            : "Going to"}
+          <IoLocationSharp className="-ml-2 mr-[0.25rem] h-6 w-6 shrink-0" />
+          <Flex className="flex flex-col ">
+            {value && (
+              <Text className="text-[0.6rem] -mt-2 font-light">
+                Search location
+              </Text>
+            )}
+            <Text className="font-light ">
+              {value
+                ? frameworks.find((framework) => framework.value === value)
+                    ?.label
+                : "Search location"}
+            </Text>
+          </Flex>
         </Button>
       </PopoverTrigger>
-      <PopoverContent className=" p-0">
+      <PopoverContent className="">
         <Command>
           <CommandInput placeholder="Search Places..." className="h-9" />
-          <CommandEmpty>No framework found.</CommandEmpty>
+          <CommandEmpty>No location found.</CommandEmpty>
           <CommandGroup>
             {frameworks.map((framework) => (
               <CommandItem
