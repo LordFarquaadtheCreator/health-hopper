@@ -18,7 +18,7 @@ import { IoPersonSharp } from "react-icons/io5";
 import React from "react";
 import { Flex, Text } from "@radix-ui/themes";
 
-export function PopoverDemo() {
+export function TravellerPicker() {
   const [open, setOpen] = React.useState(false);
   const [travellers, setTravellers] = React.useState(1);
 

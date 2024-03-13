@@ -11,7 +11,7 @@ import { Calendar } from "../ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { Flex, Text } from "@radix-ui/themes";
 
-export function CalendarDateRangePicker({
+export function DatePicker({
   className,
 }: React.HTMLAttributes<HTMLDivElement>) {
   const [date, setDate] = React.useState<DateRange | undefined>({
