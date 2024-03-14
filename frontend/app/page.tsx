@@ -39,7 +39,7 @@ export default function MusicPage() {
     },
   ];
   return (
-    <Flex className="bg-background mt-44 ">
+    <Flex className="bg-white">
       <Flex className="border-gray-300 border rounded-3xl p-6">
         {/* <MiddleTabs propTabs={tabs} /> */}
         <Flex className="flex flex-col sm:flex-row gap-4">

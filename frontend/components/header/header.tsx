@@ -17,14 +17,14 @@ import { Navbar } from "./navbar";
 export default function Header() {
   const navItems = [
     {
-      name: "Home",
-      link: "/",
-      icon: <Logo width="150" height="150" />,
-    },
-    {
       name: "About",
       link: "/about",
       icon: <UploadIcon />,
+    },
+    {
+      name: "Home",
+      link: "/",
+      icon: <Logo width="150" height="150" />,
     },
     {
       name: "Contact",
@@ -33,7 +33,7 @@ export default function Header() {
     },
   ];
   return (
-    <div className="relative ">
+    <div className="m-4 mx-8 ">
       <Navbar navItems={navItems} />
     </div>
   );

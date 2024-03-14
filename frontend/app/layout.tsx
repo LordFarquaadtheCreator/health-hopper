@@ -26,6 +26,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
+          {/* perhaps this causes blurriness */}
           <div className="ml-[auto] mr-[auto] px-6 [maxWidth:_clamp(1200px,70vw,1400px)]">
             {children}
           </div>
