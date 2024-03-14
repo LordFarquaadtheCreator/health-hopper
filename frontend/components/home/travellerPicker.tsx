@@ -34,7 +34,7 @@ export function TravellerPicker() {
           role="combobox"
           aria-expanded={open}
           className={cn(
-            "flex-1 justify-start text-left font-normal py-6 bg-white border-[#7B7B7B] "
+            "flex-1 justify-start text-left font-normal py-6 dark:bg-neutral-900 bg-white border-[#7B7B7B] "
           )}
         >
           <IoPersonSharp className="-ml-2 mr-[0.35rem] h-6 w-6 shrink-0 " />

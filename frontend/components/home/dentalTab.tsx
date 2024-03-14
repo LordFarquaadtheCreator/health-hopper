@@ -14,11 +14,11 @@ export function DentalTab() {
   return (
     <>
       <div className="flex mt-10 items-center justify-between ">
-        <div className="space-y-1">
+        <div className="">
           <h2 className="text-2xl font-semibold tracking-tight">
             Travel to Your Dreams Now
           </h2>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-muted-foreground ">
             Our top clinics for you. Updated weekly based on performance,
             transperancy and more.
           </p>

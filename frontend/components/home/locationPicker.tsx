@@ -54,7 +54,7 @@ export function LocationPicker() {
           role="combobox"
           aria-expanded={open}
           className={
-            "flex-1 justify-start text-left py-6 bg-white border-[#7B7B7B] "
+            "flex-1 justify-start text-left py-6 bg-white dark:bg-neutral-900 border-[#7B7B7B] "
           }
         >
           <IoLocationSharp className="-ml-2 mr-[0.25rem] h-6 w-6 shrink-0" />

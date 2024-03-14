@@ -10,6 +10,7 @@ import { MiddleTabs } from "@/components/home/middleTabs";
 import { DentalTab } from "@/components/home/dentalTab";
 import { IoSearch } from "react-icons/io5";
 import { Hero } from "@/components/hero";
+import { Body } from "@/components/body";
 
 export const metadata: Metadata = {
   title: "HealthHopper",
@@ -17,7 +18,13 @@ export const metadata: Metadata = {
 };
 
 export default function MusicPage() {
-  return <Hero />;
+  return (
+    <>
+      <Hero />
+      {/* <DentalTab /> */}
+      <Body />
+    </>
+  );
 }
 
 /* <div className="col-span-3 lg:col-span-4 ">
