@@ -31,7 +31,7 @@ export function DatePicker({
           id="date"
           variant={"outline"}
           className={cn(
-            "flex-1 justify-start text-left font-normal py-6 bg-white border-[#7B7B7B]"
+            "flex-1 justify-start text-left font-normal py-6  bg-white border-[#7B7B7B]"
           )}
         >
           <BsCalendarEvent className="-ml-[0.25rem] mr-2 h-6 w-6 shrink-0" />

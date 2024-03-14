@@ -6,14 +6,14 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "framer-motion";
-import { cn } from "../../lib/utils";
+import { cn } from "../lib/utils";
 import Link from "next/link";
-import { Button } from "../ui/button";
+import { Button } from "./ui/button";
 import { UploadIcon, BellIcon } from "@radix-ui/react-icons";
-import { SheetDemo } from "../imageSheet";
-import { Logo } from "../logo";
-import { ThemeChange } from "../themeChange";
-import { Sheet, SheetTrigger } from "../ui/sheet";
+import { SheetDemo } from "./imageSheet";
+import { Logo } from "./logo";
+import { ThemeChange } from "./themeChange";
+import { Sheet, SheetTrigger } from "./ui/sheet";
 
 export const Navbar = ({ navItems, className }: any) => {
   const { scrollYProgress } = useScroll();
