@@ -4,13 +4,14 @@ import * as React from "react";
 import { CalendarIcon } from "@radix-ui/react-icons";
 import { addDays, format, differenceInCalendarDays } from "date-fns";
 import { DateRange } from "react-day-picker";
-
+import { BsCalendarEvent } from "react-icons/bs";
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
 import { Calendar } from "../ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
+import { Flex, Text } from "@radix-ui/themes";
 
-export function CalendarDateRangePicker({
+export function DatePicker({
   className,
 }: React.HTMLAttributes<HTMLDivElement>) {
   const [date, setDate] = React.useState<DateRange | undefined>({
@@ -30,22 +31,28 @@ export function CalendarDateRangePicker({
           id="date"
           variant={"outline"}
           className={cn(
-            "flex-1 justify-start text-left font-normal border-[#7B7B7B]",
-            !date && "text-muted-foreground"
+            "flex-1 justify-start text-left font-normal py-6 dark:bg-neutral-900 bg-white border-[#7B7B7B]"
           )}
         >
-          <CalendarIcon className="mr-2 h-4 w-4" />
-          {date?.from ? (
-            date.to ? (
-              <>
-                {format(date.from, "LLL dd")} - {format(date.to, "LLL dd")}
-              </>
+          <BsCalendarEvent className="-ml-[0.25rem] mr-2 h-6 w-6 shrink-0" />
+          <Flex className="flex flex-col ">
+            {date?.from && (
+              <Text className="text-[0.6rem]  -mt-2  font-light">Dates</Text>
+            )}
+            {date?.from ? (
+              date.to ? (
+                <Text className="font-light">
+                  {format(date.from, "LLL dd")} - {format(date.to, "LLL dd")}
+                </Text>
+              ) : (
+                <Text className="font-light">
+                  {format(date.from, "LLL dd")}
+                </Text>
+              )
             ) : (
-              format(date.from, "LLL dd")
-            )
-          ) : (
-            <span>Pick a date</span>
-          )}
+              <Text className="font-light">Dates</Text>
+            )}
+          </Flex>
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-auto p-0" align="end">

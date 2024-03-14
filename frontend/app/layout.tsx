@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import Header from "@/components/header";
+import Header from "@/components/header/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Expoodia",
+  title: "HealthHoppper",
   description: "Streamline medical tourism",
 };
 
@@ -25,8 +25,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
+          {/* perhaps this causes blurriness */}
+          {/* <div className="ml-[auto] mr-[auto] px-6 [maxWidth:_clamp(1200px,70vw,1400px)]"> */}
           {children}
+          {/* </div> */}
         </ThemeProvider>
       </body>
     </html>

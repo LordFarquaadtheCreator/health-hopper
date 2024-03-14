@@ -2,7 +2,7 @@
 import { Flex, Grid } from "@radix-ui/themes";
 import { Badge } from "@/components/ui/badge";
 import { use, useEffect, useState } from "react";
-import { listenNowAlbums } from "@/data/albums";
+import { clinics } from "@/data/clinics";
 import Image from "next/image";
 import { PhotoDisplay } from "@/components/clinic/photoDisplay";
 import { MiddleTabs } from "@/components/home/middleTabs";
@@ -24,41 +24,41 @@ export default function Clinic({ params }: { params: { slug: string } }) {
   const [clinic, setClinic] = useState<any>({});
   const [score, setScore] = useState(0);
   const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    setLoading(true);
-    const fetchPhotos = async () => {
-      const res = await fetch(`/api/photo?place_id=${params.slug}`);
-      const data = await res.json();
+  // useEffect(() => {
+  //   setLoading(true);
+  //   const fetchPhotos = async () => {
+  //     const res = await fetch(`/api/photo?place_id=${params.slug}`);
+  //     const data = await res.json();
 
-      const apiKey = process.env.NEXT_PUBLIC_GOOGLE_API; // Replace with your actual API key
+  //     const apiKey = process.env.NEXT_PUBLIC_GOOGLE_API; // Replace with your actual API key
 
-      setPhotos([
-        `https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&maxheight=500&photoreference=${data.data.result.photos[0].photo_reference}&key=${apiKey}`,
-        `https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=300&photoreference=${data.data.result.photos[1].photo_reference}&key=${apiKey}`,
-        `https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=300&photoreference=${data.data.result.photos[2].photo_reference}&key=${apiKey}`,
-        `https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=300&photoreference=${data.data.result.photos[3].photo_reference}&key=${apiKey}`,
-        `https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=300&photoreference=${data.data.result.photos[5].photo_reference}&key=${apiKey}`,
-        `https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=300&photoreference=${data.data.result.photos[6].photo_reference}&key=${apiKey}`,
-      ]);
-    };
+  //     setPhotos([
+  //       `https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&maxheight=500&photoreference=${data.data.result.photos[0].photo_reference}&key=${apiKey}`,
+  //       `https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=300&photoreference=${data.data.result.photos[1].photo_reference}&key=${apiKey}`,
+  //       `https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=300&photoreference=${data.data.result.photos[2].photo_reference}&key=${apiKey}`,
+  //       `https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=300&photoreference=${data.data.result.photos[3].photo_reference}&key=${apiKey}`,
+  //       `https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=300&photoreference=${data.data.result.photos[5].photo_reference}&key=${apiKey}`,
+  //       `https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=300&photoreference=${data.data.result.photos[6].photo_reference}&key=${apiKey}`,
+  //     ]);
+  //   };
 
-    const fetchReviews = async () => {
-      const res = await fetch(`/api/reviews?place_id=${params.slug}`);
-      const data = await res.json();
-      setScore(data.data);
-    };
+  //   const fetchReviews = async () => {
+  //     const res = await fetch(`/api/reviews?place_id=${params.slug}`);
+  //     const data = await res.json();
+  //     setScore(data.data);
+  //   };
 
-    if (!params.slug) {
-      return;
-    }
-    fetchPhotos();
-    const found = listenNowAlbums.find((element: any) => {
-      return element.place_id === params.slug;
-    });
-    setClinic(found);
-    fetchReviews();
-    setLoading(false);
-  }, [params.slug]);
+  //   if (!params.slug) {
+  //     return;
+  //   }
+  //   fetchPhotos();
+  //   const found = listenNowAlbums.find((element: any) => {
+  //     return element.place_id === params.slug;
+  //   });
+  //   setClinic(found);
+  //   fetchReviews();
+  //   setLoading(false);
+  // }, [params.slug]);
   console.log(clinic);
 
   return (

@@ -15,7 +15,7 @@ import {
 } from "../ui/context-menu";
 
 // import { Album } from "../data/albums";
-import { playlists } from "../../data/playlists";
+import { clinics } from "@/data/clinics";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Skeleton } from "@radix-ui/themes";
