@@ -11,6 +11,7 @@ import { Calendar } from "../ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { Flex, Text } from "@radix-ui/themes";
 import { ActionTrigger } from "./actionTrigger";
+import { Anchor } from "@radix-ui/react-popover";
 
 export function DatePicker({
   className,
@@ -46,7 +47,14 @@ export function DatePicker({
           )}
         </Flex>
       </ActionTrigger>
-      <PopoverContent className="w-auto p-0" align="end">
+      {/* <Anchor
+        className="absolute bg-red-500 top-0 left-0 z-[50000]"
+        asChild={true}
+      > */}
+      <PopoverContent
+        className="small:w-auto small:h-auto w-[100vw]   p-0"
+        align="center"
+      >
         <Calendar
           initialFocus
           mode="range"
@@ -58,6 +66,7 @@ export function DatePicker({
           disabled={(date) => isPastDate(date)}
         />
       </PopoverContent>
+      {/* </Anchor> */}
     </Popover>
     // </div>
   );
