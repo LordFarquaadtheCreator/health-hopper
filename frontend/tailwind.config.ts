@@ -19,9 +19,7 @@ const config = {
       },
     },
     fontSize: {
-      bigClamp: "clamp(5rem, 8vw, 16rem)",
-      smallClamp: "clamp(3rem, 9vw, 4rem)",
-      smallestClamp: "clamp(1rem, 10vw, 5rem)",
+      bigClamp: "clamp(5.5rem, 8vw, 9rem)",
     },
     screens: {
       small: "710px",
