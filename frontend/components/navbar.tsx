@@ -70,17 +70,20 @@ export const Navbar = ({ navItems, className }: any) => {
           <div className="flex-row small:flex hidden items-center gap-2">
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="outline">
+                <Button variant="ghost">
                   <UploadIcon />
                 </Button>
               </SheetTrigger>
               <SheetDemo />
             </Sheet>
-            <Button variant="outline">
+            <Button variant="ghost">
               <BellIcon className="w-4 h-4" />
             </Button>
             <ThemeChange />
-            <Button variant={"outline"} className="tracking-tight  font-medium">
+            <Button
+              variant={"secondary"}
+              className="tracking-tight rounded-full font-light"
+            >
               <Link href={"/auth/login"}>Sign in</Link>
             </Button>
           </div>
