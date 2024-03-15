@@ -9,7 +9,12 @@ import {
 import { cn } from "../lib/utils";
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { UploadIcon, BellIcon } from "@radix-ui/react-icons";
+import {
+  UploadIcon,
+  BellIcon,
+  HamburgerMenuIcon,
+  PersonIcon,
+} from "@radix-ui/react-icons";
 import { SheetDemo } from "./imageSheet";
 import { Logo } from "./logo";
 import { ThemeChange } from "./themeChange";
@@ -62,7 +67,7 @@ export const Navbar = ({ navItems, className }: any) => {
             <Logo width="150" height="150" />
           </Link>
 
-          <div className="flex flex-row items-center gap-2">
+          <div className="flex-row small:flex hidden items-center gap-2">
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="outline">
@@ -77,6 +82,14 @@ export const Navbar = ({ navItems, className }: any) => {
             <ThemeChange />
             <Button variant={"outline"} className="tracking-tight  font-medium">
               <Link href={"/auth/login"}>Sign in</Link>
+            </Button>
+          </div>
+          <div className="small:hidden flex flex-row gap-2 items-center">
+            {/* <Button variant="ghost">
+              <PersonIcon className="w-4 h-4" />
+            </Button> */}
+            <Button variant="outline" className="rounded-full">
+              <HamburgerMenuIcon className="w-4 h-4" />
             </Button>
           </div>
         </div>
