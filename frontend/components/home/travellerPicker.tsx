@@ -1,19 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-import { cn } from "@/lib/utils";
-import {
-  MinusIcon,
-  PersonIcon,
-  PlusIcon,
-  SewingPinFilledIcon,
-} from "@radix-ui/react-icons";
+import { Popover, PopoverContent } from "@/components/ui/popover";
+import { MinusIcon, PlusIcon } from "@radix-ui/react-icons";
 import { IoPersonSharp } from "react-icons/io5";
 import React from "react";
 import { Flex, Text } from "@radix-ui/themes";
@@ -60,11 +48,9 @@ export function TravellerPicker() {
                 <MinusIcon className="h-4 w-4" />
                 <span className="sr-only">Decrease</span>
               </Button>
-              <div className="flex-1 text-center">
-                <div className="text-7xl font-bold tracking-tighter ">
-                  {travellers}
-                </div>
-              </div>
+              <Text className="flex-1 text-center text-[50px] font-bold tracking-tighter ">
+                {travellers}
+              </Text>
               <Button
                 variant="outline"
                 size="icon"
@@ -77,40 +63,6 @@ export function TravellerPicker() {
               </Button>
             </div>
           </div>
-          {/* <div className="grid gap-2">
-            <div className="grid grid-cols-3 items-center gap-4">
-              <Label htmlFor="width">Width</Label>
-              <Input
-                id="width"
-                defaultValue="100%"
-                className="col-span-2 h-8"
-              />
-            </div>
-            <div className="grid grid-cols-3 items-center gap-4">
-              <Label htmlFor="maxWidth">Max. width</Label>
-              <Input
-                id="maxWidth"
-                defaultValue="300px"
-                className="col-span-2 h-8"
-              />
-            </div>
-            <div className="grid grid-cols-3 items-center gap-4">
-              <Label htmlFor="height">Height</Label>
-              <Input
-                id="height"
-                defaultValue="25px"
-                className="col-span-2 h-8"
-              />
-            </div>
-            <div className="grid grid-cols-3 items-center gap-4">
-              <Label htmlFor="maxHeight">Max. height</Label>
-              <Input
-                id="maxHeight"
-                defaultValue="none"
-                className="col-span-2 h-8"
-              />
-            </div>
-          </div> */}
         </div>
       </PopoverContent>
     </Popover>

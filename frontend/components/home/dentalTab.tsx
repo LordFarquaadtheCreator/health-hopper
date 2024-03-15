@@ -2,11 +2,9 @@
 
 import { ScrollArea } from "@radix-ui/react-scroll-area";
 import { Separator } from "@radix-ui/react-separator";
-import { AlbumArtwork } from "./album-artwork";
 import { ScrollBar } from "../ui/scroll-area";
 import { useState, useEffect } from "react";
 import { Skeleton } from "../ui/skeleton";
-import Image from "next/image";
 
 export function DentalTab() {
   const [isLoading, setLoading] = useState(true);

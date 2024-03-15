@@ -1,14 +1,5 @@
 import { Metadata } from "next";
 
-import { Button } from "../components/ui/button";
-import { Tabs, TabsContent } from "../components/ui/tabs";
-import { DatePicker } from "../components/home/datePicker";
-import { Flex, Text } from "@radix-ui/themes";
-import { LocationPicker } from "@/components/home/locationPicker";
-import { TravellerPicker } from "@/components/home/travellerPicker";
-import { MiddleTabs } from "@/components/home/middleTabs";
-import { DentalTab } from "@/components/home/dentalTab";
-import { IoSearch } from "react-icons/io5";
 import { Hero } from "@/components/hero";
 import { Body } from "@/components/body";
 

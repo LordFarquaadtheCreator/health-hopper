@@ -1,11 +1,6 @@
 "use client";
 import { Flex, Grid } from "@radix-ui/themes";
 import { useEffect, useState } from "react";
-import {
-  ResizableHandle,
-  ResizablePanel,
-  ResizablePanelGroup,
-} from "@/components/ui/resizable";
 import Image from "next/image";
 export default function Clinic({ params }: { params: { slug: string } }) {
   const [photos, setPhotos] = useState<any>([]);
