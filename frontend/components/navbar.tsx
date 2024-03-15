@@ -57,8 +57,9 @@ export const Navbar = ({ navItems, className }: any) => {
         // transition={{
         //   ease: "easeInOut",
         // }}
+        // bg-gradient-to-br from-white/20 to-white/5 backdrop-blur     dark:border-white/[0.2]
         className={cn(
-          " border dark:bg-black  bg-gradient-to-br from-white/20 to-white/5 backdrop-blur     dark:border-white/[0.2] rounded-3xl   z-[10] pr-2 pl-8 py-2 ",
+          " border dark:bg-neutral-900 rounded-3xl   z-[10] pr-2 pl-8 py-2 ",
           className
         )}
       >
