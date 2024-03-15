@@ -9,7 +9,7 @@ export const ActionBar = () => {
   return (
     <Flex className="border-gray-300 border dark:bg-black bg-white rounded-3xl p-6 ">
       {/* <MiddleTabs propTabs={tabs} /> */}
-      <Flex className="flex flex-col min-[680px]:flex-row gap-4">
+      <Flex className="flex flex-col small:flex-row gap-4">
         <LocationPicker />
         <DatePicker />
         <TravellerPicker />
