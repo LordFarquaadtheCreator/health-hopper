@@ -18,9 +18,7 @@ const config = {
         "2xl": "1400px",
       },
     },
-    fontSize: {
-      bigClamp: "clamp(5.5rem, 8vw, 9rem)",
-    },
+
     screens: {
       small: "710px",
       ...defaultTheme.screens,
@@ -67,6 +65,9 @@ const config = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      fontSize: {
+        bigClamp: "clamp(5.5rem, 8vw, 9rem)",
       },
       keyframes: {
         "accordion-down": {
