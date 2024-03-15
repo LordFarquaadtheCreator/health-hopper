@@ -19,10 +19,14 @@ const config = {
       },
     },
     fontSize: {
-      custom: "clamp(5rem, 8vw, 16rem)",
+      bigClamp: "clamp(5rem, 8vw, 16rem)",
+      smallClamp: "clamp(3rem, 9vw, 4rem)",
+      smallestClamp: "clamp(1rem, 10vw, 5rem)",
     },
     screens: {
       small: "710px",
+      ...defaultTheme.screens,
+      smallest: "380px",
       ...defaultTheme.screens,
     },
     extend: {
