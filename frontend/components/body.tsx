@@ -3,7 +3,7 @@ import { ClipboardCopyIcon } from "@radix-ui/react-icons";
 
 export const Body = () => {
   return (
-    <CardGrid className="p-8">
+    <CardGrid className="p-3 small:p-8 small:pt-4">
       {items.map((item, i) => (
         <CardItem
           key={i}

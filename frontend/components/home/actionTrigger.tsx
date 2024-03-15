@@ -9,7 +9,7 @@ export const ActionTrigger = ({ children, className }: any) => {
         id="date"
         variant={"outline"}
         className={cn(
-          "flex-1 justify-start text-left font-normal min-[680px]:py-6 py-3 dark:bg-neutral-900 bg-white border-[#7B7B7B]"
+          "flex-1 justify-start text-left font-normal small:py-6 py-3 dark:bg-neutral-900 bg-white border-[#7B7B7B]"
         )}
       >
         {children}
