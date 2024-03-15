@@ -22,6 +22,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { Flex, Text } from "@radix-ui/themes";
+import { ActionTrigger } from "./actionTrigger";
 
 const locations = [
   {
@@ -48,30 +49,21 @@ export function LocationPicker() {
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
-      <PopoverTrigger asChild>
-        <Button
-          variant="outline"
-          role="combobox"
-          aria-expanded={open}
-          className={
-            "flex-1 justify-start text-left py-6 bg-white dark:bg-neutral-900 border-[#7B7B7B] "
-          }
-        >
-          <IoLocationSharp className="-ml-2 mr-[0.25rem] h-6 w-6 shrink-0" />
-          <Flex className="flex flex-col ">
-            {value && (
-              <Text className="text-[0.6rem] -mt-2 font-light">
-                Search location
-              </Text>
-            )}
-            <Text className="font-light ">
-              {value
-                ? locations.find((location) => location.value === value)?.label
-                : "Search location"}
+      <ActionTrigger>
+        <IoLocationSharp className="-ml-2 mr-[0.25rem] h-6 w-6 shrink-0" />
+        <Flex className="flex flex-col ">
+          {value && (
+            <Text className="text-[0.6rem] -mt-2 font-light">
+              Search location
             </Text>
-          </Flex>
-        </Button>
-      </PopoverTrigger>
+          )}
+          <Text className="font-light ">
+            {value
+              ? locations.find((location) => location.value === value)?.label
+              : "Search location"}
+          </Text>
+        </Flex>
+      </ActionTrigger>
       <PopoverContent className="">
         <Command>
           <CommandInput placeholder="Search Places..." className="h-9" />

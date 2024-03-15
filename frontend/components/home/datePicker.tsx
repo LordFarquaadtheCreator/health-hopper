@@ -10,6 +10,7 @@ import { Button } from "../ui/button";
 import { Calendar } from "../ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { Flex, Text } from "@radix-ui/themes";
+import { ActionTrigger } from "./actionTrigger";
 
 export function DatePicker({
   className,
@@ -26,35 +27,25 @@ export function DatePicker({
   return (
     // <div className={cn("grid gap-2", className)}>
     <Popover>
-      <PopoverTrigger asChild>
-        <Button
-          id="date"
-          variant={"outline"}
-          className={cn(
-            "flex-1 justify-start text-left font-normal py-6 dark:bg-neutral-900 bg-white border-[#7B7B7B]"
+      <ActionTrigger>
+        <BsCalendarEvent className="-ml-[0.25rem] mr-2 h-6 w-6 shrink-0" />
+        <Flex className="flex flex-col ">
+          {date?.from && (
+            <Text className="text-[0.6rem]  -mt-2  font-light">Dates</Text>
           )}
-        >
-          <BsCalendarEvent className="-ml-[0.25rem] mr-2 h-6 w-6 shrink-0" />
-          <Flex className="flex flex-col ">
-            {date?.from && (
-              <Text className="text-[0.6rem]  -mt-2  font-light">Dates</Text>
-            )}
-            {date?.from ? (
-              date.to ? (
-                <Text className="font-light">
-                  {format(date.from, "LLL dd")} - {format(date.to, "LLL dd")}
-                </Text>
-              ) : (
-                <Text className="font-light">
-                  {format(date.from, "LLL dd")}
-                </Text>
-              )
+          {date?.from ? (
+            date.to ? (
+              <Text className="font-light">
+                {format(date.from, "LLL dd")} - {format(date.to, "LLL dd")}
+              </Text>
             ) : (
-              <Text className="font-light">Dates</Text>
-            )}
-          </Flex>
-        </Button>
-      </PopoverTrigger>
+              <Text className="font-light">{format(date.from, "LLL dd")}</Text>
+            )
+          ) : (
+            <Text className="font-light">Dates</Text>
+          )}
+        </Flex>
+      </ActionTrigger>
       <PopoverContent className="w-auto p-0" align="end">
         <Calendar
           initialFocus
