@@ -32,8 +32,10 @@ export function TravellerPicker() {
       <ActionTrigger>
         <IoPersonSharp className="-ml-2 mr-[0.35rem] h-6 w-6 shrink-0 " />
         <Flex className="flex flex-col">
-          <Text className="font-light text-[0.6rem] -mt-2">Travellers</Text>
-          <Text className="font-light">
+          <Text className="font-light text-[0.6rem] pt-1 -mt-2">
+            Travellers
+          </Text>
+          <Text className="font-[350]">
             {travellers} {travellers == 1 ? "traveller" : "travellers"}{" "}
           </Text>
         </Flex>
@@ -59,7 +61,7 @@ export function TravellerPicker() {
                 <span className="sr-only">Decrease</span>
               </Button>
               <div className="flex-1 text-center">
-                <div className="text-7xl font-bold tracking-tighter">
+                <div className="text-7xl font-bold tracking-tighter ">
                   {travellers}
                 </div>
               </div>

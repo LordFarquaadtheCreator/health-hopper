@@ -32,15 +32,15 @@ export function DatePicker({
         <BsCalendarEvent className="-ml-[0.25rem] mr-2 h-6 w-6 shrink-0" />
         <Flex className="flex flex-col ">
           {date?.from && (
-            <Text className="text-[0.6rem]  -mt-2  font-light">Dates</Text>
+            <Text className="text-[0.6rem] pt-1  -mt-2  font-light">Dates</Text>
           )}
           {date?.from ? (
             date.to ? (
-              <Text className="font-light">
+              <Text className="font-[350]">
                 {format(date.from, "LLL dd")} - {format(date.to, "LLL dd")}
               </Text>
             ) : (
-              <Text className="font-light">{format(date.from, "LLL dd")}</Text>
+              <Text className="font-[350]">{format(date.from, "LLL dd")}</Text>
             )
           ) : (
             <Text className="font-light">Dates</Text>

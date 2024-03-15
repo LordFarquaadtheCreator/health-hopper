@@ -53,11 +53,11 @@ export function LocationPicker() {
         <IoLocationSharp className="-ml-2 mr-[0.25rem] h-6 w-6 shrink-0" />
         <Flex className="flex flex-col ">
           {value && (
-            <Text className="text-[0.6rem] -mt-2 font-light">
+            <Text className="text-[0.6rem] pt-1 -mt-2 font-light">
               Search location
             </Text>
           )}
-          <Text className="font-light ">
+          <Text className="font-[350]">
             {value
               ? locations.find((location) => location.value === value)?.label
               : "Search location"}
