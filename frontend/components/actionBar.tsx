@@ -7,7 +7,7 @@ import { IoSearch } from "react-icons/io5";
 
 export const ActionBar = () => {
   return (
-    <Flex className="border-gray-300 border dark:bg-black bg-white rounded-3xl p-6">
+    <Flex className="border-gray-300 border dark:bg-black bg-white rounded-3xl p-6 ">
       {/* <MiddleTabs propTabs={tabs} /> */}
       <Flex className="flex flex-col sm:flex-row gap-4">
         <LocationPicker />

@@ -42,15 +42,15 @@ export const Navbar = ({ navItems, className }: any) => {
     <AnimatePresence mode="wait">
       <motion.div
         // initial={{
-        //   opacity: 1,
-        //   y: -200,
+        //   opacity: 0,
+        //   y: -10,
         // }}
         // animate={{
-        //   y: visible ? 0 : -100,
-        //   opacity: visible ? 1 : 0,
+        //   y: 0,
+        //   opacity: 1,
         // }}
         // transition={{
-        //   duration: 0.2,
+        //   ease: "easeInOut",
         // }}
         className={cn(
           " border dark:bg-black  bg-gradient-to-br from-white/20 to-white/5 backdrop-blur     dark:border-white/[0.2] rounded-3xl   z-[10] pr-2 pl-8 py-2 ",
