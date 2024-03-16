@@ -2,7 +2,7 @@ import Image from "next/image";
 import { clinics } from "../data/clinics";
 import { ImagesRow } from "./imagesRow";
 import { cn } from "@/lib/utils";
-import img from "../public/background.jpg";
+import img from "../public/cool.jpg";
 import { Flex, Heading } from "@radix-ui/themes";
 import { Button } from "./ui/button";
 

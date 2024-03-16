@@ -3,7 +3,7 @@ import { Flex, Heading } from "@radix-ui/themes";
 import { ActionBar } from "./actionBar";
 import { Navbar } from "./navbar";
 import Image from "next/image";
-import img from "../public/background.jpg";
+import img from "../public/back.jpg";
 import darkImg from "../public/dark.jpg";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
