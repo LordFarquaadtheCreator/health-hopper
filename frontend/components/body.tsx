@@ -17,8 +17,8 @@ export const Body = () => {
         height={3000}
         src={img}
       />
-      <ImagesRow items={clinics} text={"Explore trips to trending clinics"} />
-      <ImagesRow items={clinics} text={"Last-minute deals for the week"} />
+      <ImagesRow items={clinics} text={"Get instant free quotes"} />
+      <ImagesRow items={clinics} text={"Certified VIP travel and booking"} />
     </div>
   );
 };
