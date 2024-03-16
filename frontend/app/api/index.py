@@ -25,18 +25,20 @@ def get_teeth_res() -> list :
 
   image = request.files['image']
   img = Image.open(BytesIO(image.read()))
-  
+
   if img.mode != 'RGB':
       img = img.convert('RGB')
   inputs = feature_extractor(images=img, return_tensors="pt")
   outputs = [check_aligned_model(**inputs).logits.softmax(dim=-1).argmax(-1).item(), check_gum_model(**inputs).logits.softmax(dim=-1).argmax(-1).item(), check_teeth_model(**inputs).logits.softmax(dim=-1).argmax(-1).item()]
 
   return outputs
+
 if __name__ == "__main__":
   feature_extractor = ViTImageProcessor.from_pretrained('google/vit-base-patch16-224')
   check_aligned_model = ViTForImageClassification.from_pretrained('steven123/Check_Aligned_Teeth')
   check_gum_model = ViTForImageClassification.from_pretrained('steven123/Check_Gum_Teeth')
   check_teeth_model = ViTForImageClassification.from_pretrained('steven123/Check_GoodBad_Teeth')  
+  app.run("main:app", host="0.0.0.0", port=8000, reload=True)
 
 
-app.run(debug=True)
+
