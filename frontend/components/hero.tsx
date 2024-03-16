@@ -18,7 +18,7 @@ export const Hero = () => {
         <div className="top-0 p-4 hidden small:block absolute w-full">
           <Heading
             style={{ lineHeight: "1" }}
-            className="text-bigClamp small:text-start text-center tracking-tight font-bold text-[rgb(250,250,250)] subpixel-antialiased drop-shadow-[0_1.2px_1.2px_rgba(0,0,50,0.4)] text-pretty"
+            className="text-bigClamp small:text-start text-center tracking-tight font-bold text-white subpixel-antialiased drop-shadow-[0_1.2px_1.2px_rgba(0,0,50,0.4)] text-pretty"
           >
             MEDICAL TOURISM MADE SIMPLE.
           </Heading>
