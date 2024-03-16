@@ -12,12 +12,12 @@ export const CardItem = ({
   return (
     <div
       className={cn(
-        " rounded-xl flex-shrink-0  flex-0 min-w-[400px] h-[300px] group/bento transition duration-200   dark:bg-black dark:border-white/[0.2] bg-white border  justify-between flex flex-col",
+        " rounded-xl cursor-pointer flex-shrink-0  flex-0 min-w-[400px] h-[300px] group/bento transition duration-200   dark:bg-black dark:border-white/[0.2] bg-white border  justify-between flex flex-col",
         className
       )}
     >
       <Image
-        className="rounded-t-xl "
+        className="rounded-t-xl max-h-[225px] object-bottom object-cover border-none"
         alt=""
         width={400}
         height={225}

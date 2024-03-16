@@ -20,7 +20,13 @@ export const clinics = [
       { title: "Friendly Staff", icon: "staff" },
     ],
     email: "hello@magicsmileturkey.com",
-    photos: ["https://www.magicsmileturkey.com"], //<- get here
+    photos: [
+      "https://ef33ea9c.rocketcdn.me/wp-content/uploads/2022/02/magic-smile-dentist-555x740.jpg.webp",
+      "https://ef33ea9c.rocketcdn.me/wp-content/uploads/2022/02/magic-smile-turkey-dental-clinic-555x740.jpg.webp",
+      "https://ef33ea9c.rocketcdn.me/wp-content/uploads/2022/02/turkey-dentist-clinic-555x740.jpg.webp,https://ef33ea9c.rocketcdn.me/wp-content/uploads/2022/02/dentist-recommended-turkey-555x740.jpg.webp",
+      "https://ef33ea9c.rocketcdn.me/wp-content/uploads/2022/02/dental-satisfaction-guarantee-warranty-turkey-555x740.jpg.webp",
+      "https://ef33ea9c.rocketcdn.me/wp-content/uploads/2022/02/magic-smile-happy-patients-555x740.jpg.webp",
+    ], //<- get here
     hotel: {
       name: "Azuu Hotel",
       distance: "5 minutes",
@@ -202,7 +208,13 @@ export const clinics = [
       { title: "Friendly Staff", icon: "staff" },
     ],
     email: "dentist@sevilsmile.com",
-    photos: ["https://www.sevilsmile.com/dental-gallery"], //<- get here
+    photos: [
+      "https://assets-global.website-files.com/6428110abde7a77e5d82c187/6525228ba4d963c0d77a3c2b_sevil-smile-studio-turkey-p-500.webp",
+      "https://assets-global.website-files.com/6428110bbde7a7614082c197/650d7acd698450f9709c50e1_DSCF3748-p-500.webp",
+      "https://assets-global.website-files.com/6428110bbde7a7614082c197/650d7af973f01cb784bc18d0_DD7A9040_1-p-500.webp",
+      "https://assets-global.website-files.com/6428110bbde7a7614082c197/6428110bbde7a7128682c3e1_pexels-polina-zimmerman-4687290-p-500.jpg",
+      "https://assets-global.website-files.com/6428110abde7a77e5d82c187/6526779fc9da43f372f54d75_best-dental-clinic-turkey-p-500.jpg",
+    ], //<- get here
     hotel: {},
     finance: {},
     treatments: {
@@ -267,7 +279,13 @@ export const clinics = [
       { title: "Latest Tech", icon: "tech" },
     ],
     email: "hello@smiledentalturkey.com",
-    photos: ["https://www.smiledentalturkey.com"], //<- get here
+    photos: [
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.picco.com.tr%2Fwp-content%2Fuploads%2FBB_Lobby_001.jpg&f=1&nofb=1&ipt=9f5e0764af507b0e9a7557f5022fa04f66e269fc1cba2c495617c9a962e9f03e&ipo=images",
+      "https://www.picco.com.tr/wp-content/webp-express/webp-images/uploads/BB_Clinic_003-2048x1152.jpg.webp",
+      "https://www.picco.com.tr/wp-content/webp-express/webp-images/uploads/BB_FirstRoom_001-2048x1152.jpg.webp",
+      "https://www.picco.com.tr/wp-content/webp-express/webp-images/uploads/AA_Gaming_001-2048x1152.jpg.webp",
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdentalexcellenceturkey.com%2Fwp-content%2Fuploads%2F2022%2F03%2Fzirconia-crown-before-after-img-8.png&f=1&nofb=1&ipt=acaec5771f20c66893d4e476794d14ecd71c73b4653b55d0e713390afeb5ca89&ipo=images",
+    ], //<- get here
     hotel: {},
     finance: {
       name: "Kandoo",
@@ -335,7 +353,14 @@ export const clinics = [
       { title: "VIP Services", icon: "car" },
     ],
     email: "info@dentakay.com",
-    photos: ["https://dentakay.com"], //<- get here
+    photos: [
+      "https://dentakay.com/wp-content/uploads/2018/02/Antalya2.jpg",
+      "https://dentakay.com/wp-content/uploads/2018/02/Nish2.jpg",
+      "https://dentakay.com/wp-content/uploads/2018/02/Nish1.jpg",
+      "https://dentakay.com/wp-content/uploads/2018/02/Antalya2.jpg",
+      "https://dentakay.com/wp-content/uploads/2018/02/hollywood-smile-3.jpg",
+      "https://dentakay.com/wp-content/uploads/2018/02/Antalya1.jpg",
+    ], //<- get here
     hotel: {},
     finance: {},
     treatments: {

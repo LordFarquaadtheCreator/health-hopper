@@ -45,6 +45,7 @@ export const ImagesRow = ({ items, text }: any) => {
             title={item.name}
             description={item.location}
             rating={item.rating}
+            header={item.photos[i]}
             //   className={i === 3 || i === 6 ? "md:col-span-2" : ""}
           />
         ))}
