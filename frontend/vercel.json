@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "builds": [{ "src": "/frontend/app/api/index.py", "use": "@vercel/python" }],
-  "routes": [{ "src": "/api/(.*)", "dest": "/frontend/app/api/index.py" }],
+  "builds": [{ "src": "./api/index.py", "use": "@vercel/python" }],
+  "routes": [{ "src": "/api/:path*", "dest": "./api/index.py" }],
   "env": {
     "APP_MODULE": "main:app"
   }

@@ -16,7 +16,22 @@ def home():
 @app.route('/api/about', methods=['GET'])
 def about():
     return {"message": "Hello World"}
-    
+
+@app.route("/get_teeth_results", methods=['POST'])
+def get_teeth_res() -> list :
+  if 'image' not in request.files:
+        return jsonify({'error': 'No image part'}), 400
+
+  image = request.files['image']
+  img = Image.open(BytesIO(image.read()))
+
+  if img.mode != 'RGB':
+      img = img.convert('RGB')
+  inputs = feature_extractor(images=img, return_tensors="pt")
+  outputs = [check_aligned_model(**inputs).logits.softmax(dim=-1).argmax(-1).item(), check_gum_model(**inputs).logits.softmax(dim=-1).argmax(-1).item(), check_teeth_model(**inputs).logits.softmax(dim=-1).argmax(-1).item()]
+
+  return outputs
+
 
 @app.route("/api/get_teeth_results", methods=['POST'])
 def get_teeth_res() -> list :
