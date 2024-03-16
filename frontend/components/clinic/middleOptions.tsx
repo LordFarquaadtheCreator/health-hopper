@@ -1,12 +1,12 @@
 "use client";
 import { Tabs, TabsList, TabsTrigger } from "@radix-ui/react-tabs";
-import { Flex } from "@radix-ui/themes";
+import { Flex, TabsContent } from "@radix-ui/themes";
 
 export function MiddleOptions({ children }: any) {
   return (
-    <Flex className="p-4 border-[1px] border-gray-300  rounded-b-none border-t-0  border-b-0 rounded-lg flex ">
+    <Flex className=" ">
       <Tabs className="bg-none" defaultValue="Overview">
-        <TabsList className="shrink-0 bg-transparent flex flex-row gap-4">
+        <TabsList className="shrink-0 bg-transparent flex flex-row gap-4 overflow-hidden">
           <TabsTrigger
             className="data-[state=active]:text-black data-[state=active]:dark:text-white rounded-none   data-[state=active]:focus:relative data-[state=active]:shadow-[0_0_0_0px] data-[state=active]:border-b border-black dark:border-white  outline-none cursor-pointer"
             value="Overview"
@@ -38,7 +38,9 @@ export function MiddleOptions({ children }: any) {
             Polices
           </TabsTrigger>
         </TabsList>
-        {children}
+        {/* <TabsContent>
+          {children}
+        </TabsContent> */}
       </Tabs>
     </Flex>
   );

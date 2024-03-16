@@ -24,7 +24,8 @@ export const clinics = [
     photos: [
       "https://ef33ea9c.rocketcdn.me/wp-content/uploads/2022/02/magic-smile-dentist-555x740.jpg.webp",
       "https://ef33ea9c.rocketcdn.me/wp-content/uploads/2022/02/magic-smile-turkey-dental-clinic-555x740.jpg.webp",
-      "https://ef33ea9c.rocketcdn.me/wp-content/uploads/2022/02/turkey-dentist-clinic-555x740.jpg.webp,https://ef33ea9c.rocketcdn.me/wp-content/uploads/2022/02/dentist-recommended-turkey-555x740.jpg.webp",
+      "https://ef33ea9c.rocketcdn.me/wp-content/uploads/2022/02/turkey-dentist-clinic-555x740.jpg.webp",
+      "https://ef33ea9c.rocketcdn.me/wp-content/uploads/2022/02/dentist-recommended-turkey-555x740.jpg.webp",
       "https://ef33ea9c.rocketcdn.me/wp-content/uploads/2022/02/dental-satisfaction-guarantee-warranty-turkey-555x740.jpg.webp",
       "https://ef33ea9c.rocketcdn.me/wp-content/uploads/2022/02/magic-smile-happy-patients-555x740.jpg.webp",
     ], //<- get here
@@ -216,6 +217,7 @@ export const clinics = [
       "https://assets-global.website-files.com/6428110bbde7a7614082c197/650d7af973f01cb784bc18d0_DD7A9040_1-p-500.webp",
       "https://assets-global.website-files.com/6428110bbde7a7614082c197/6428110bbde7a7128682c3e1_pexels-polina-zimmerman-4687290-p-500.jpg",
       "https://assets-global.website-files.com/6428110abde7a77e5d82c187/6526779fc9da43f372f54d75_best-dental-clinic-turkey-p-500.jpg",
+      "https://assets-global.website-files.com/6428110abde7a77e5d82c187/652e4f3e26888654e75e7c7d_award-winning-clinic-p-500.webp",
     ], //<- get here
     hotel: {},
     finance: {},
@@ -288,6 +290,7 @@ export const clinics = [
       "https://www.picco.com.tr/wp-content/webp-express/webp-images/uploads/BB_FirstRoom_001-2048x1152.jpg.webp",
       "https://www.picco.com.tr/wp-content/webp-express/webp-images/uploads/AA_Gaming_001-2048x1152.jpg.webp",
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdentalexcellenceturkey.com%2Fwp-content%2Fuploads%2F2022%2F03%2Fzirconia-crown-before-after-img-8.png&f=1&nofb=1&ipt=acaec5771f20c66893d4e476794d14ecd71c73b4653b55d0e713390afeb5ca89&ipo=images",
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.smiledentalturkey.com%2Fuploads%2FyA6q9BVTk0Rr.jpg&f=1&nofb=1&ipt=66ec7c32657599623a6392ce6fbd17b78bbc6142cf08807af6fe63de7b964d1c&ipo=images",
     ], //<- get here
     hotel: {},
     finance: {
