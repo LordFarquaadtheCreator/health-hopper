@@ -1,18 +1,12 @@
 "use client";
 import { CardItem } from "./cardItem";
-import {
-  ArrowLeftIcon,
-  ArrowRightIcon,
-  ClipboardCopyIcon,
-} from "@radix-ui/react-icons";
-import { ScrollArea, ScrollBar } from "./ui/scroll-area";
-import { Skeleton } from "./ui/skeleton";
+import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 import { useEffect, useRef, useState } from "react";
-import { clinics } from "../data/clinics";
+
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-export const ImagesRow = ({ items }: any) => {
+export const ImagesRow = ({ items, text }: any) => {
   const containerRef: any = useRef<any>(null);
   const [leftVisible, setLeftVisible] = useState(false);
   const [rightVisible, setRightVisible] = useState(true);
@@ -37,17 +31,15 @@ export const ImagesRow = ({ items }: any) => {
   });
 
   return (
-    <div className="relative p-3 small:p-8 small:pt-4 no-visible-scrollbar">
-      <h2 className="!text-[2rem] pb-2 font-semibold tracking-tight">
-        Travel to Your Dreams Now
-      </h2>
+    <div className="relative  no-visible-scrollbar">
+      <h2 className="!text-[2rem] pb-2 font-semibold tracking-tight">{text}</h2>
       <div
         ref={containerRef}
         className={cn(
           "flex flex-row flex-shrink-0   gap-4 w-full overflow-y-hidden flex-0 overflow-x-scroll no-visible-scrollbar"
         )}
       >
-        {clinics.map((item: any, i: any) => (
+        {items.map((item: any, i: any) => (
           <CardItem
             key={i}
             title={item.name}
@@ -62,7 +54,7 @@ export const ImagesRow = ({ items }: any) => {
       {leftVisible && (
         <button
           type="button"
-          className="group absolute left-[0] top-1/3 z-20 grid aspect-square place-content-center rounded-full transition-colors"
+          className="group absolute left-[-2.2%] top-1/2 z-20 grid aspect-square place-content-center rounded-full transition-colors"
           style={{
             width: CURSOR_SIZE,
             height: CURSOR_SIZE,
@@ -84,7 +76,7 @@ export const ImagesRow = ({ items }: any) => {
       {rightVisible && (
         <button
           type="button"
-          className="group  absolute right-[0] top-1/3 z-20 grid aspect-square place-content-center rounded-full transition-colors"
+          className="group  absolute right-[-2.2%] top-1/2 z-20 grid aspect-square place-content-center rounded-full transition-colors"
           style={{
             width: CURSOR_SIZE,
             height: CURSOR_SIZE,
