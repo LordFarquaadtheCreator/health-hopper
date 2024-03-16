@@ -70,7 +70,7 @@ export const ImagesRow = ({ items, text }: any) => {
           }}
         >
           <span className="sr-only">Previous Guide</span>
-          <ArrowLeftIcon className="h-10 w-10 stroke-[1.5] bg-white transition-colors hover:bg-black hover:text-white rounded-full border p-1  group-disabled:opacity-50" />
+          <ArrowLeftIcon className="h-10 w-10 stroke-[1.5] bg-white light:hover:bg-black   light:hover:text-white dark:hover:bg-black dark:hover:text-white dark:text-black rounded-full border p-1  group-disabled:opacity-50" />
         </button>
       )}
       {rightVisible && (
@@ -92,7 +92,7 @@ export const ImagesRow = ({ items, text }: any) => {
           }}
         >
           <span className="sr-only">Next Guide</span>
-          <ArrowRightIcon className="h-10 w-10 stroke-[1.5] bg-white hover:bg-black hover:text-white rounded-full border p-1 transition-colors  group-disabled:opacity-50" />
+          <ArrowRightIcon className="h-10 w-10 stroke-[1.5] bg-white light:hover:bg-black   light:hover:text-white dark:hover:bg-black dark:hover:text-white dark:text-black rounded-full border p-1 transition-colors  group-disabled:opacity-50" />
         </button>
       )}
     </div>
