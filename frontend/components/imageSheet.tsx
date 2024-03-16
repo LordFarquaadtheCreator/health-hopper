@@ -43,13 +43,13 @@ export function SheetDemo() {
       try {
         const formData = new FormData();
         formData.append("image", photo);
-        const response = await fetch("/api/teeth", {
+        const response = await fetch("/api/get_teeth_results", {
           method: "POST",
           body: formData,
         });
 
         const result = await response.json();
-        setQuota(result.data);
+        setQuota(result);
         setLoading(false);
         console.log(result);
       } catch (error) {
