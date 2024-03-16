@@ -1,5 +1,6 @@
 export const clinics = [
   {
+    id: 1,
     name: "Magic Smile turkey",
     priceRange: "$$",
     site: "https://www.magicsmileturkey",
@@ -189,6 +190,7 @@ export const clinics = [
     },
   },
   {
+    id: 2,
     name: "Sevil Smile Studio",
     priceRange: "$$$",
     site: "https://www.sevilsmile.com",
@@ -260,6 +262,7 @@ export const clinics = [
     },
   },
   {
+    id: 3,
     name: "Smile Dental Turkey",
     priceRange: "$$",
     site: "https://www.smiledentalturkey.com",
@@ -334,6 +337,7 @@ export const clinics = [
     },
   },
   {
+    id: 4,
     name: "DentaKay",
     priceRange: "$$",
     location: "Turkey, Antalya",
@@ -502,6 +506,7 @@ export const clinics = [
     },
   },
   {
+    id: 5,
     name: "DentaKay",
     priceRange: "$$",
     location: "Turkey, Antalya",
@@ -663,6 +668,7 @@ export const clinics = [
     },
   },
   {
+    id: 5,
     name: "DentaKay",
     priceRange: "$$",
     location: "Turkey, Antalya",
@@ -824,6 +830,7 @@ export const clinics = [
     },
   },
   {
+    id: 5,
     name: "DentaKay",
     priceRange: "$$",
     location: "Turkey, Antalya",
@@ -985,6 +992,7 @@ export const clinics = [
     },
   },
   {
+    id: 5,
     name: "DentaKay",
     priceRange: "$$",
     location: "Turkey, Antalya",
@@ -1146,6 +1154,169 @@ export const clinics = [
     },
   },
   {
+    id: 5,
+    name: "DentaKay",
+    priceRange: "$$",
+    location: "Turkey, Antalya",
+    address: "Fener Mah. 47/D, 07160 Muratpaşa/Antalya, Türkiye",
+    site: "https://dentakay.com",
+    rating: 4.9,
+    reviewAmount: 801,
+    description:
+      "Dentakay is a state-of-the-art dental clinic founded in 2009 and based in Istanbul. Hosting some of Turkey’s biggest dentists, Dentakay has become a hub of excellence",
+    phone: "+90 541 600 80 08",
+    ammenities: [
+      { title: "Free Consultation", icon: "clock" },
+      { title: "Treatment Plan", icon: "hotel" },
+      { title: "Hollywood Smile", icon: "comfortable" },
+      { title: "Modern Equipment", icon: "equipment" },
+      { title: "Convenient Location", icon: "location" },
+      { title: "VIP Services", icon: "car" },
+    ],
+    email: "info@dentakay.com",
+    photos: ["https://dentakay.com"], //<- get here
+    hotel: {},
+    finance: {},
+    treatments: {
+      paidServices: {
+        "DENTAL IMPLANTS": {
+          "Dental Implant + Abutment": {
+            price_gbp: 425,
+            price_eur: 500,
+            type: "Osstem Implant",
+          },
+          "Sinus Lifting": {
+            price_gbp: 250,
+            price_eur: 300,
+            description: "Per Sinus Pocket",
+          },
+          "Bone Grafting (CC)": {
+            price_gbp: 125,
+            price_eur: 150,
+          },
+          Membrane: {
+            price_gbp: 125,
+            price_eur: 150,
+          },
+        },
+        "ALL ON FOUR & ALL ON SIX TREATMENTS": {
+          "All On Four": {
+            "Implant x 4": 1700,
+            "Temporary Denture": 200,
+            "All On Four Screwed Porcelain Crowns": 2040,
+            "Total for Per Jaw": {
+              price_gbp: 3940,
+              price_eur: 4650,
+            },
+          },
+          "All On Six": {
+            "Implant x 6": 2550,
+            "Temporary Denture": 200,
+            "All On Six Screwed Porcelain Crowns": 2040,
+            "Total for Per Jaw": {
+              price_gbp: 4790,
+              price_eur: 5650,
+            },
+          },
+          "Full Mouth Extraction": {
+            price_gbp: 125,
+            price_eur: 150,
+            description: "Only Valid For Full Mouth Implant Treatment",
+          },
+        },
+        "DENTAL CROWNS & LAMINATE VENEERS": {
+          "Metal Fused Porcelain Crown": {
+            price_gbp: 125,
+            price_eur: 150,
+          },
+          "Zirconium Porcelain Crown": {
+            price_gbp: 170,
+            price_eur: 200,
+          },
+          "DSD System in Computer Designed E-Max Laminate Veneers": {
+            price_gbp: 215,
+            price_eur: 250,
+            description: "Made in Laboratory with Cerec",
+          },
+          "E-Max Crowns": {
+            price_gbp: 215,
+            price_eur: 250,
+            description: "Made in Laboratory with Cerec",
+          },
+          "Magic Smile White Cerec Crown": {
+            price_gbp: 250,
+            price_eur: 300,
+            description: "Made in Laboratory with Cerec",
+          },
+          "Temporary Crown": {
+            price_gbp: 35,
+            price_eur: 39,
+          },
+        },
+        "ROOT CANAL TREATMENTS": {
+          "Root Canal Treatments": {
+            price_gbp: 120,
+            price_eur: 150,
+          },
+          "Old Canal Removals": {
+            price_gbp: 40,
+            price_eur: 50,
+          },
+        },
+        "OTHER DENTAL TREATMENTS": {
+          "Permanent Denture": {
+            price_gbp: 600,
+            price_eur: 720,
+          },
+          "Temporary Denture": {
+            price_gbp: 200,
+            price_eur: 250,
+          },
+          "Partial Denture": {
+            price_gbp: 100,
+            price_eur: 120,
+            description: "up to 4 teeth",
+          },
+          "Tooth Extraction": {
+            price_gbp: 35,
+            price_eur: 40,
+          },
+          "Wisdom Tooth Extraction": {
+            price_gbp: 80,
+            price_eur: 95,
+          },
+          Post: {
+            price_gbp: 100,
+            price_eur: 120,
+            description: "Per Tooth",
+          },
+          "Gum Contouring": {
+            price_gbp: 100,
+            price_eur: 120,
+            description: "Per Tooth",
+          },
+          "Gum Curretage": {
+            price_gbp: 100,
+            price_eur: 120,
+          },
+          "Night Guard": {
+            price_gbp: 60,
+            price_eur: 70,
+          },
+          "White Filling / Aesthetic Filling": {
+            price_gbp: 60,
+            price_eur: 70,
+          },
+          "Descale & Polish (Full Mouth)": {
+            price_gbp: 60,
+            price_eur: 70,
+          },
+        },
+      },
+    },
+  },
+  {
+    id: 5,
     name: "DentaKay",
     priceRange: "$$",
     location: "Turkey, Antalya",

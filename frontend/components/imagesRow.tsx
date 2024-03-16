@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export const ImagesRow = ({ items, text }: any) => {
   const containerRef: any = useRef<any>(null);
@@ -40,14 +41,15 @@ export const ImagesRow = ({ items, text }: any) => {
         )}
       >
         {items.map((item: any, i: any) => (
-          <CardItem
-            key={i}
-            title={item.name}
-            description={item.location}
-            rating={item.rating}
-            header={item.photos[i]}
-            //   className={i === 3 || i === 6 ? "md:col-span-2" : ""}
-          />
+          <Link key={i} href={`/clinic/${item.id}`}>
+            <CardItem
+              title={item.name}
+              description={item.location}
+              rating={item.rating}
+              header={item.photos[i]}
+              //   className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+            />
+          </Link>
         ))}
       </div>
       {/* </div> */}

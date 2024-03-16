@@ -17,7 +17,7 @@ export const CardItem = ({
       )}
     >
       <Image
-        className="rounded-t-xl max-h-[225px] object-bottom object-cover border-none"
+        className="rounded-t-xl max-h-[225px] object-bottom object-cover border-none outline-none"
         alt=""
         width={400}
         height={225}
