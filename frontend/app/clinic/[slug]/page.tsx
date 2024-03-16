@@ -91,7 +91,7 @@ export default function Clinic({ params }: { params: { slug: string } }) {
                 </Link>
                 <h3 className="mt-8">Popular Amenities</h3>
                 <Flex className="mt-2 flex w-[300px] justify-between flex-wrap gap-6">
-                  {clinic.ammenities.map((e, id) => (
+                  {clinic.ammenities.map((e: any, id: any) => (
                     <Flex key={id} className="flex-row flex gap-[0.25rem]">
                       <CheckIcon />
                       <p className="text-xs text-[0.70rem]">{e.title}</p>
