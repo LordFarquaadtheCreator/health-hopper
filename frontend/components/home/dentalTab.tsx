@@ -1,6 +1,6 @@
 "use client";
 
-import { ScrollArea } from "@radix-ui/react-scroll-area";
+import { ScrollArea, Thumb } from "@radix-ui/react-scroll-area";
 import { Separator } from "@radix-ui/react-separator";
 import { ScrollBar } from "../ui/scroll-area";
 import { useState, useEffect } from "react";
@@ -47,6 +47,7 @@ export function DentalTab() {
               />
             ))} */}
           </div>
+          <Thumb />
           <ScrollBar orientation="horizontal" />
         </ScrollArea>
       </div>

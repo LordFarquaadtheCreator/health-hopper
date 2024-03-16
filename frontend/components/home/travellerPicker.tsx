@@ -30,7 +30,7 @@ export function TravellerPicker() {
       </ActionTrigger>
       <PopoverContent>
         <div className="grid gap-4">
-          <div className="space-y-2">
+          <div className="">
             <h4 className="font-medium leading-none">Travellers</h4>
             <p className="text-sm text-muted-foreground">
               Amount of people travelling.
