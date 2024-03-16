@@ -33,7 +33,6 @@ export const ImagesRow = ({ items }: any) => {
       } else if (current < 0.95) {
         setRightVisible(true);
       }
-      console.log(current);
     }
   });
 
