@@ -24,7 +24,7 @@ export const Hero = () => {
           </Heading>
         </div>
         <Image
-          className={cn(imageClass, "dark:hidden small:block")}
+          className={cn(imageClass, "dark:hidden small:block ")}
           alt=""
           width={3000}
           height={3000}
