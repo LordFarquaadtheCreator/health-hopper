@@ -13,7 +13,7 @@ export const ActionBar = () => {
         <LocationPicker />
         <DatePicker />
         <TravellerPicker />
-        <Button className="flex h-[50px] rounded-3xl items-center gap-[0.15rem]">
+        <Button className="flex h-[50px] small:rounded-3xl  items-center gap-[0.15rem]">
           <IoSearch />
           <Text>GO</Text>
         </Button>

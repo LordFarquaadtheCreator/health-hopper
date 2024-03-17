@@ -12,7 +12,7 @@ export const Hero = () => {
   const { theme } = useTheme();
   const imageClass = "border rounded-3xl w-full h-[70vh] hidden object-cover";
   return (
-    <Flex className="m-4 mx-3 small:mx-8 overflow-hidden flex flex-col gap-6">
+    <Flex className="m-4 mx-1 small:mx-8 overflow-hidden flex flex-col gap-6">
       <Navbar className={"bg-white"} />
       <Flex className="relative">
         <div className="top-0 p-4 hidden small:block absolute w-full">

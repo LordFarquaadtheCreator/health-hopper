@@ -21,6 +21,7 @@ import Link from "next/link";
 import { IconRight } from "react-day-picker";
 import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/navbar";
+import { motion } from "framer-motion";
 export default function Clinic({ params }: { params: { slug: string } }) {
   const [clinic, setClinic] = useState<any>({});
   const [score, setScore] = useState(0);
@@ -32,7 +33,12 @@ export default function Clinic({ params }: { params: { slug: string } }) {
   }, []);
 
   return (
-    <div className="bg-background pt-4 w-[full]  px-3 small:px-8 overflow-hidden">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: "easeInOut" }}
+      className="bg-background pt-4 w-[full]  px-3 small:px-8 overflow-hidden"
+    >
       {!loading && clinic && (
         <>
           <Navbar className={"bg-white mb-4"} />
@@ -143,6 +149,6 @@ export default function Clinic({ params }: { params: { slug: string } }) {
           </Flex>
         </>
       )}
-    </div>
+    </motion.div>
   );
 }
