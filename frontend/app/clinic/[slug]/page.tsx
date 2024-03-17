@@ -5,7 +5,6 @@ import { use, useEffect, useState } from "react";
 import { clinics } from "@/data/clinics";
 import Image from "next/image";
 import { PhotoDisplay } from "@/components/clinic/photoDisplay";
-import { MiddleTabs } from "@/components/home/middleTabs";
 import { MiddleOptions } from "@/components/clinic/middleOptions";
 import {
   CheckIcon,
@@ -20,7 +19,7 @@ import {
 import Link from "next/link";
 import { IconRight } from "react-day-picker";
 import { Button } from "@/components/ui/button";
-import { Navbar } from "@/components/navbar";
+import { Navbar } from "@/components/navbar/navbar";
 import { motion } from "framer-motion";
 export default function Clinic({ params }: { params: { slug: string } }) {
   const [clinic, setClinic] = useState<any>({});

@@ -43,10 +43,9 @@ export function SheetDemo() {
       try {
         const formData = new FormData();
         formData.append("image", photo);
-        const response = await fetch("/api/get_teeth_results", {
-          method: "POST",
-          body: formData,
-        });
+        const response = await fetch(
+          "https://t21oo8114c.execute-api.us-east-2.amazonaws.com/default/flaskLamb/flamb/bad/"
+        );
 
         const result = await response.json();
         setQuota(result);

@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
-import { PopoverTrigger } from "../ui/popover";
-import { Button } from "../ui/button";
+import { PopoverTrigger } from "../../ui/popover";
+import { Button } from "../../ui/button";
 
 export const ActionTrigger = ({ children, className }: any) => {
   return (

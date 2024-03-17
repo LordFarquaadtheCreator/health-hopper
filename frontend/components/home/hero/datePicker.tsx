@@ -4,8 +4,8 @@ import * as React from "react";
 import { addDays, format, differenceInCalendarDays } from "date-fns";
 import { DateRange } from "react-day-picker";
 import { BsCalendarEvent } from "react-icons/bs";
-import { Calendar } from "../ui/calendar";
-import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
+import { Calendar } from "../../ui/calendar";
+import { Popover, PopoverContent, PopoverTrigger } from "../../ui/popover";
 import { Flex, Text } from "@radix-ui/themes";
 import { ActionTrigger } from "./actionTrigger";
 

@@ -33,7 +33,7 @@ export const ImagesRow = ({ items, text }: any) => {
 
   return (
     <div className="relative  no-visible-scrollbar">
-      <h2 className="!text-[2rem] pb-2 font-semibold tracking-tight">{text}</h2>
+      <h2 className="text-3xl pb-4 font-semibold tracking-tight">{text}</h2>
       <div
         ref={containerRef}
         className={cn(

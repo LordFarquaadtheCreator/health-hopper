@@ -1,8 +1,8 @@
 import { Flex, Text } from "@radix-ui/themes";
-import { LocationPicker } from "./home/locationPicker";
-import { DatePicker } from "./home/datePicker";
-import { TravellerPicker } from "./home/travellerPicker";
-import { Button } from "./ui/button";
+import { LocationPicker } from "./locationPicker";
+import { DatePicker } from "./datePicker";
+import { TravellerPicker } from "./travellerPicker";
+import { Button } from "../../ui/button";
 import { IoSearch } from "react-icons/io5";
 
 export const ActionBar = () => {

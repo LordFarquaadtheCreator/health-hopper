@@ -1,6 +1,6 @@
 "use client";
-import { Hero } from "@/components/hero";
-import { Body } from "@/components/body";
+import { Hero } from "@/components/home/hero/hero";
+import { Body } from "@/components/home/body/body";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 
