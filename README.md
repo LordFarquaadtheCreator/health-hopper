@@ -1,4 +1,4 @@
-# Health Hopper
+# Health Hopper - Frontend*
 
 Medical Tourism made simple - currently focused on Turkey, and branching globally.
 Uses a python backend to ship the ML models and queries necessary to make application run.
