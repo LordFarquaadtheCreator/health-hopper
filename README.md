@@ -19,8 +19,9 @@ A `next.js` application with a python backend server in `flask`
 ## Back End [\*Click here to access](https://github.com/garvsl/health-hopper-backend)
 
 - you must set up a python virtual environment to get the same package abilities as `npm`
-- the environment instructions are laid out in the readme
+- the environment instructions are laid out in the linked repos  readme
 - once this is created, you can simply run the server using `flask app.py` or `python app.py` in debug mode
+- then simply make calls to the generated backend link via the frontend 
 
 ## API Keys
 
