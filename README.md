@@ -3,7 +3,7 @@
 Medical Tourism made simple - currently focused on Turkey, and branching globally.
 Uses a python backend to ship the ML models and queries necessary to make application run.
 
-### Currently Deployed @ [HealthHopper](https://healthopper.tech)
+### Currently Deployed @ [HealthHopper](https://healthhopper.tech)
 
 ## Technical Description
 
